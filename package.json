@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cornflourblue/jw-react-npm-boilerplate.git"
+    "url": "git+https://github.com/kevinsmithwebdev/react-lectorem.git"
   },
   "author": "Kevin Smith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cornflourblue/jw-react-npm-boilerplate/issues"
+    "url": "https://github.com/kevinsmithwebdev/react-lectorem/issues"
   },
-  "homepage": "https://github.com/cornflourblue/jw-react-npm-boilerplate#readme"
+  "homepage": "https://github.com/kevinsmithwebdev/react-lectorem.git#readme"
 }
