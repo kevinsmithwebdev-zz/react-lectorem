@@ -1,19 +1,66 @@
 {
   "name": "react-lectorem",
-  "version": "0.1.0",
-  "description": "a React library to sync audio and text, highlighting the text as the audio \"reads\" it",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.1.1",
+  "description": "React library to sync audio and text, highlighting the text as the audio \"reads\" it",
+  "main": "./lib/Lectorem.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinsmithwebdev/react-lectorem.git"
+    "url": "https://github.com/kevinsmithwebdev/react-lectorem.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "React",
+    "reader",
+    "text",
+    "audio",
+    "sync",
+    "synchronization"
+  ],
   "author": "Kevin Smith",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kevinsmithwebdev/react-lectorem/issues"
   },
-  "homepage": "https://github.com/kevinsmithwebdev/react-lectorem.git#readme"
+  "homepage": "https://github.com/kevinsmithwebdev/react-lectorem.git#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-test-renderer": "^16.9.2",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^3.6.0",
+    "jest": "^26.1.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "react-test-renderer": "^16.13.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react-audio-player": "0.13.0",
+    "react-dom": "16.13.1",
+    "react-hot-loader": "4.12.20",
+    "react": "16.13.1"
+  },
+  "dependencies": {
+    "react-audio-player": "0.13.0"
+  },
+  "scripts": {
+    "build": "rm -rf lib && webpack",
+    "clear": "rm -rf node_modules && rm -f package-lock.json",
+    "test": "jest"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
 }
