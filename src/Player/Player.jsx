@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import './Player.css';
 
