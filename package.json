@@ -59,6 +59,7 @@
     "webpack-cli": "^3.2.1"
   },
   "peerDependencies": {
+    "json-parse-better-errors": "1.0.2",
     "prop-types": "^15.6.0",
     "react-audio-player": "0.13.0",
     "react-dom": "16.13.1",

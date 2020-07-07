@@ -22,5 +22,7 @@ module.exports = {
   ],
   ignorePatterns: ['*.css'],
   rules: {
+    'react/prop-types': 0,
+    'jsx-quotes': ['error', 'prefer-single'],
   },
 };

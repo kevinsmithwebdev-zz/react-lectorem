@@ -7,7 +7,6 @@ const TIME_CODE_FUDGE = 0.1;
 
 const getShouldHighlight = (lect, readTime) => (lect.start - TIME_CODE_FUDGE) <= readTime && readTime <= (lect.end + TIME_CODE_FUDGE);
 
-
 const renderLect = (lect, idx, readTime) => {
   const shouldHighlight = getShouldHighlight(lect, readTime);
   const key = idx;
@@ -15,7 +14,7 @@ const renderLect = (lect, idx, readTime) => {
 };
 
 const renderParagraph = ({ header, lects }, idx, readTime) => (
-  <div className='paragraph' key={ idx }>
+  <div className='paragraph' key={idx}>
     <div className='Lectorem-paragraph-header'>
       { !!header.imagePath &&
         <div>
@@ -34,7 +33,7 @@ const renderParagraphs = (paragraphs, readTime) =>
   paragraphs.map((paragraph, idx) => renderParagraph(paragraph, idx, readTime));
 
 
-  // TODO: issues with packages using hooks
+// TODO: issues with packages using hooks
 class Lectorem extends Component {
   // const [readTime, setReadTime] = useState(0);
   state = { readTime: 0 }
