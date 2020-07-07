@@ -3,7 +3,7 @@ import './Lect.css';
 
 const endingPunctuation = ['.', '!', '?'];
 
-const Lect = ({ lect: { text }, shouldHighlight, readTime }) => {
+const Lect = ({ lect: { text }, shouldHighlight }) => {
   const className = [
     'Lect',
     shouldHighlight ? 'highlighted' : 'unHighlighted',
@@ -12,7 +12,7 @@ const Lect = ({ lect: { text }, shouldHighlight, readTime }) => {
   const isEndingInPunctuation = endingPunctuation.includes(lastChar);
   const spacer = isEndingInPunctuation ? '  ' : ' ';
   return (
-    <span className={ className } >
+    <span className={className}>
       { `${text}${spacer}` }
     </span>
   );
