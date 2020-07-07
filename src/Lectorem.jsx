@@ -37,7 +37,7 @@ const renderParagraphs = (paragraphs, readTime) =>
   // TODO: issues with packages using hooks
 class Lectorem extends Component {
   // const [readTime, setReadTime] = useState(0);
-  state = { readTime: 0 };
+  state = { readTime: 0 }
 
   setReadTime = readTime => this.setState({ readTime });
 
