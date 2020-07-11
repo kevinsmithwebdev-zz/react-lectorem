@@ -6,11 +6,10 @@ const LISTEN_INTERVAL_IN_MS = 10;
 
 const Player = ({ onListen, audioPath }) => (
   <div className='Player'>
-    <h2>Player</h2>
     <ReactAudioPlayer
-      listenInterval={LISTEN_INTERVAL_IN_MS}
-      onListen={onListen}
-      src={audioPath}
+      listenInterval={ LISTEN_INTERVAL_IN_MS }
+      onListen={ onListen }
+      src={ audioPath }
       controlsList='nodownload'
       controls
     />

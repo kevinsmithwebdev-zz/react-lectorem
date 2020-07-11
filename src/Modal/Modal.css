@@ -1,0 +1,51 @@
+
+.Modal {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+  left: 50%;
+  opacity: 1;
+  position: fixed;
+  top: 50%;
+  transform: scale(1);
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  min-width: 200px;
+  max-width: 500px;
+  z-index: 100;
+  overflow: auto;
+}
+
+.Modal.off {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.33);
+  box-shadow: 5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.Modal .header {
+  background-color: #ddd;
+  padding: 2px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Modal button {
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  color: red;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+.Modal .line {
+  border-top: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+.Modal .line .label {
+  font-weight: bold;
+}

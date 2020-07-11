@@ -24,5 +24,11 @@ module.exports = {
   rules: {
     'react/prop-types': 0,
     'jsx-quotes': ['error', 'prefer-single'],
+    'react/destructuring-assignment': 0,
+    'operator-linebreak': 0,
+    'react/state-in-constructor': 0,
+    'arrow-parens': ['error', 'as-needed'],
+    'react/jsx-one-expression-per-line': 0,
+    "react/jsx-curly-spacing": ['error', {"when": "always", "allowMultiline": false}]
   },
 };
