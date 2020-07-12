@@ -1,20 +1,25 @@
 import React from 'react';
 import './Lect.css';
 
-const endingPunctuation = ['.', '!', '?'];
+export const ENDING_PUNCTUATION = ['.', '!', '?'];
+export const getSpacer = text => (ENDING_PUNCTUATION.includes(text.slice(-1)) ? '  ' : ' ');
 
 const Lect = ({ lect, shouldHighlight, showModal }) => {
+  if (!lect) {
+    return null;
+  }
+
   const className = [
     'Lect',
     shouldHighlight ? 'highlighted' : 'unHighlighted',
   ].join(' ');
-  const lastChar = lect.text.slice(-1);
-  const isEndingInPunctuation = endingPunctuation.includes(lastChar);
-  const spacer = isEndingInPunctuation ? '  ' : ' ';
+
+  const spacer = getSpacer(lect.text);
+
   return (
     <span
       className={ className }
-      onClick={ () => showModal(lect) }
+      onClick={ /* istanbul ignore next */ () => showModal(lect) }
       aria-hidden='true'
     >
       { `${lect.text}${spacer}` }

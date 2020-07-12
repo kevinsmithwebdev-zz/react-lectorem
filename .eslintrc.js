@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
+    jest: true,
   },
   extends: [
     'airbnb',
@@ -20,7 +21,7 @@ module.exports = {
     'css-modules',
     'react',
   ],
-  ignorePatterns: ['*.css'],
+  ignorePatterns: ['*.css', '*.snap'],
   rules: {
     'react/prop-types': 0,
     'jsx-quotes': ['error', 'prefer-single'],
@@ -29,6 +30,7 @@ module.exports = {
     'react/state-in-constructor': 0,
     'arrow-parens': ['error', 'as-needed'],
     'react/jsx-one-expression-per-line': 0,
-    "react/jsx-curly-spacing": ['error', {"when": "always", "allowMultiline": false}]
+    'react/jsx-curly-spacing': ['error', { when: 'always', allowMultiline: false }],
+    'react/jsx-props-no-spreading': 0,
   },
 };
