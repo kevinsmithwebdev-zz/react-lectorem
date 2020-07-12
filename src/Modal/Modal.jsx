@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css';
 
-const renderLine = (label, thisData) => (
+export const renderLine = (label, thisData) => (
   !!thisData && (
     <div className='line'>
       <span className='label'>

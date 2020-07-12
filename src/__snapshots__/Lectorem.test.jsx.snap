@@ -1,0 +1,395 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lectorem the main component render empty should render without crashing 1`] = `
+<p>
+  Loading...
+</p>
+`;
+
+exports[`Lectorem the main component render with data with all data should render without crashing 1`] = `
+<div
+  className="Lectorem"
+>
+  <h2>
+    El burro bailarín
+     
+  </h2>
+  <h3>
+    The Dancing Donkey
+     
+  </h3>
+  <div
+    className="playerContainer"
+  >
+    <Player
+      audioPath="./burro.mp3"
+      onListen={[Function]}
+    />
+  </div>
+  <div
+    className="lectsContainer"
+  >
+    <Paragraphs
+      paragraphs={
+        Array [
+          Object {
+            "header": Object {
+              "imageFilename": "burro.png",
+              "imagePath": "./burro.png",
+              "lects": Array [
+                Object {
+                  "end": 1.18,
+                  "start": 0.36,
+                  "text": "El burro",
+                },
+                Object {
+                  "end": 2.58,
+                  "explanation": "The Spanish word \\"bailarín\\" can be both and adjective (\\"dancing\\") and a noun (\\"dancer\\").",
+                  "start": 1.18,
+                  "text": "bailarín.",
+                  "translation": "dancer",
+                },
+              ],
+            },
+            "lects": Array [
+              Object {
+                "end": 3.22,
+                "explanation": "This is how we say hello.",
+                "start": 2.64,
+                "text": "Hola.",
+              },
+              Object {
+                "end": 4.12,
+                "explanation": "",
+                "start": 3.6,
+                "text": "Soy",
+                "translation": "I am",
+              },
+              Object {
+                "end": 4.98,
+                "explanation": "",
+                "start": 4.12,
+                "text": "un burro.",
+                "translation": "a donkey.",
+              },
+              Object {
+                "end": 6.36,
+                "explanation": "",
+                "start": 5.42,
+                "text": "Me llamo",
+                "translation": "My name is",
+              },
+              Object {
+                "end": 7.04,
+                "explanation": "",
+                "start": 6.36,
+                "text": "Beto.",
+                "translation": "Beto.",
+              },
+              Object {
+                "end": 8.36,
+                "explanation": "",
+                "start": 7.7,
+                "text": "Tengo",
+                "translation": "I have",
+              },
+              Object {
+                "end": 8.86,
+                "explanation": "",
+                "start": 8.4,
+                "text": "botas.",
+                "translation": "boots.",
+              },
+              Object {
+                "end": 9.92,
+                "explanation": "",
+                "start": 9.46,
+                "text": "Tengo",
+                "translation": "I have",
+              },
+              Object {
+                "end": 10.52,
+                "explanation": "",
+                "start": 9.92,
+                "text": "botas",
+                "translation": "boots",
+              },
+              Object {
+                "end": 11.6,
+                "explanation": "",
+                "start": 10.68,
+                "text": "para bailar.",
+                "translation": "for dancing.",
+              },
+            ],
+          },
+        ]
+      }
+      readTime={0}
+      showModal={[Function]}
+    />
+  </div>
+  <Modal
+    data={null}
+    hideModal={[Function]}
+  />
+</div>
+`;
+
+exports[`Lectorem the main component render with data with data missing subtitle should render without crashing 1`] = `
+<div
+  className="Lectorem"
+>
+  <h2>
+    El burro bailarín
+     
+  </h2>
+  <div
+    className="playerContainer"
+  >
+    <Player
+      audioPath="./burro.mp3"
+      onListen={[Function]}
+    />
+  </div>
+  <div
+    className="lectsContainer"
+  >
+    <Paragraphs
+      paragraphs={
+        Array [
+          Object {
+            "header": Object {
+              "imageFilename": "burro.png",
+              "imagePath": "./burro.png",
+              "lects": Array [
+                Object {
+                  "end": 1.18,
+                  "start": 0.36,
+                  "text": "El burro",
+                },
+                Object {
+                  "end": 2.58,
+                  "explanation": "The Spanish word \\"bailarín\\" can be both and adjective (\\"dancing\\") and a noun (\\"dancer\\").",
+                  "start": 1.18,
+                  "text": "bailarín.",
+                  "translation": "dancer",
+                },
+              ],
+            },
+            "lects": Array [
+              Object {
+                "end": 3.22,
+                "explanation": "This is how we say hello.",
+                "start": 2.64,
+                "text": "Hola.",
+              },
+              Object {
+                "end": 4.12,
+                "explanation": "",
+                "start": 3.6,
+                "text": "Soy",
+                "translation": "I am",
+              },
+              Object {
+                "end": 4.98,
+                "explanation": "",
+                "start": 4.12,
+                "text": "un burro.",
+                "translation": "a donkey.",
+              },
+              Object {
+                "end": 6.36,
+                "explanation": "",
+                "start": 5.42,
+                "text": "Me llamo",
+                "translation": "My name is",
+              },
+              Object {
+                "end": 7.04,
+                "explanation": "",
+                "start": 6.36,
+                "text": "Beto.",
+                "translation": "Beto.",
+              },
+              Object {
+                "end": 8.36,
+                "explanation": "",
+                "start": 7.7,
+                "text": "Tengo",
+                "translation": "I have",
+              },
+              Object {
+                "end": 8.86,
+                "explanation": "",
+                "start": 8.4,
+                "text": "botas.",
+                "translation": "boots.",
+              },
+              Object {
+                "end": 9.92,
+                "explanation": "",
+                "start": 9.46,
+                "text": "Tengo",
+                "translation": "I have",
+              },
+              Object {
+                "end": 10.52,
+                "explanation": "",
+                "start": 9.92,
+                "text": "botas",
+                "translation": "boots",
+              },
+              Object {
+                "end": 11.6,
+                "explanation": "",
+                "start": 10.68,
+                "text": "para bailar.",
+                "translation": "for dancing.",
+              },
+            ],
+          },
+        ]
+      }
+      readTime={0}
+      showModal={[Function]}
+    />
+  </div>
+  <Modal
+    data={null}
+    hideModal={[Function]}
+  />
+</div>
+`;
+
+exports[`Lectorem the main component render with data with data missing title should render without crashing 1`] = `
+<div
+  className="Lectorem"
+>
+  <h3>
+    The Dancing Donkey
+     
+  </h3>
+  <div
+    className="playerContainer"
+  >
+    <Player
+      audioPath="./burro.mp3"
+      onListen={[Function]}
+    />
+  </div>
+  <div
+    className="lectsContainer"
+  >
+    <Paragraphs
+      paragraphs={
+        Array [
+          Object {
+            "header": Object {
+              "imageFilename": "burro.png",
+              "imagePath": "./burro.png",
+              "lects": Array [
+                Object {
+                  "end": 1.18,
+                  "start": 0.36,
+                  "text": "El burro",
+                },
+                Object {
+                  "end": 2.58,
+                  "explanation": "The Spanish word \\"bailarín\\" can be both and adjective (\\"dancing\\") and a noun (\\"dancer\\").",
+                  "start": 1.18,
+                  "text": "bailarín.",
+                  "translation": "dancer",
+                },
+              ],
+            },
+            "lects": Array [
+              Object {
+                "end": 3.22,
+                "explanation": "This is how we say hello.",
+                "start": 2.64,
+                "text": "Hola.",
+              },
+              Object {
+                "end": 4.12,
+                "explanation": "",
+                "start": 3.6,
+                "text": "Soy",
+                "translation": "I am",
+              },
+              Object {
+                "end": 4.98,
+                "explanation": "",
+                "start": 4.12,
+                "text": "un burro.",
+                "translation": "a donkey.",
+              },
+              Object {
+                "end": 6.36,
+                "explanation": "",
+                "start": 5.42,
+                "text": "Me llamo",
+                "translation": "My name is",
+              },
+              Object {
+                "end": 7.04,
+                "explanation": "",
+                "start": 6.36,
+                "text": "Beto.",
+                "translation": "Beto.",
+              },
+              Object {
+                "end": 8.36,
+                "explanation": "",
+                "start": 7.7,
+                "text": "Tengo",
+                "translation": "I have",
+              },
+              Object {
+                "end": 8.86,
+                "explanation": "",
+                "start": 8.4,
+                "text": "botas.",
+                "translation": "boots.",
+              },
+              Object {
+                "end": 9.92,
+                "explanation": "",
+                "start": 9.46,
+                "text": "Tengo",
+                "translation": "I have",
+              },
+              Object {
+                "end": 10.52,
+                "explanation": "",
+                "start": 9.92,
+                "text": "botas",
+                "translation": "boots",
+              },
+              Object {
+                "end": 11.6,
+                "explanation": "",
+                "start": 10.68,
+                "text": "para bailar.",
+                "translation": "for dancing.",
+              },
+            ],
+          },
+        ]
+      }
+      readTime={0}
+      showModal={[Function]}
+    />
+  </div>
+  <Modal
+    data={null}
+    hideModal={[Function]}
+  />
+</div>
+`;
+
+exports[`Lectorem the main component render with undefined data should render without crashing 1`] = `
+<p>
+  Loading...
+</p>
+`;

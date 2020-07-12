@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lect the main component render empty should render without crashing 1`] = `null`;
+
+exports[`Lect the main component render with data, should highlight should render and match snapshot 1`] = `
+<span
+  aria-hidden="true"
+  className="Lect highlighted"
+  onClick={[Function]}
+>
+  Hola.  
+</span>
+`;
+
+exports[`Lect the main component render with data, should not highlight should render and match snapshot 1`] = `
+<span
+  aria-hidden="true"
+  className="Lect unHighlighted"
+  onClick={[Function]}
+>
+  Hola.  
+</span>
+`;

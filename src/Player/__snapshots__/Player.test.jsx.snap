@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player the main component render empty should render without crashing 1`] = `
+<div
+  className="Player"
+>
+  <ReactAudioPlayer
+    autoPlay={false}
+    className=""
+    controls={true}
+    controlsList="nodownload"
+    id=""
+    listenInterval={10}
+    loop={false}
+    muted={false}
+    onAbort={[Function]}
+    onCanPlay={[Function]}
+    onCanPlayThrough={[Function]}
+    onEnded={[Function]}
+    onError={[Function]}
+    onListen={[Function]}
+    onLoadedMetadata={[Function]}
+    onPause={[Function]}
+    onPlay={[Function]}
+    onSeeked={[Function]}
+    onVolumeChanged={[Function]}
+    preload="metadata"
+    style={Object {}}
+    title=""
+    volume={1}
+  />
+</div>
+`;
+
+exports[`Player the main component render with data should render and match snapshot 1`] = `
+<div
+  className="Player"
+>
+  <ReactAudioPlayer
+    autoPlay={false}
+    className=""
+    controls={true}
+    controlsList="nodownload"
+    id=""
+    listenInterval={10}
+    loop={false}
+    muted={false}
+    onAbort={[Function]}
+    onCanPlay={[Function]}
+    onCanPlayThrough={[Function]}
+    onEnded={[Function]}
+    onError={[Function]}
+    onListen={[Function]}
+    onLoadedMetadata={[Function]}
+    onPause={[Function]}
+    onPlay={[Function]}
+    onSeeked={[Function]}
+    onVolumeChanged={[Function]}
+    preload="metadata"
+    src="audioPath123"
+    style={Object {}}
+    title=""
+    volume={1}
+  />
+</div>
+`;

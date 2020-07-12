@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph renderLect should render and match snapshot 1`] = `
+<Lect
+  lect={
+    Object {
+      "end": 3.22,
+      "explanation": "This is how we say hello.",
+      "start": 2.64,
+      "text": "Hola.",
+    }
+  }
+  readTime={123}
+  shouldHighlight={false}
+  showModal="showModal123"
+/>
+`;
+
+exports[`Paragraph the main component render empty should render without crashing 1`] = `
+<div
+  className="paragraph"
+>
+  <div
+    className="Lectorem-paragraph-header"
+  />
+  <div />
+</div>
+`;
+
+exports[`Paragraph the main component render with data should render and match snapshot 1`] = `
+<div
+  className="paragraph"
+>
+  <div
+    className="Lectorem-paragraph-header"
+  >
+    <div>
+      <img
+        alt="Logo"
+        src="./burro.png"
+        width="150px"
+      />
+    </div>
+    <Lect
+      lect={
+        Object {
+          "end": 1.18,
+          "start": 0.36,
+          "text": "El burro",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 2.58,
+          "explanation": "The Spanish word \\"bailarín\\" can be both and adjective (\\"dancing\\") and a noun (\\"dancer\\").",
+          "start": 1.18,
+          "text": "bailarín.",
+          "translation": "dancer",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+  </div>
+  <div>
+    <Lect
+      lect={
+        Object {
+          "end": 3.22,
+          "explanation": "This is how we say hello.",
+          "start": 2.64,
+          "text": "Hola.",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 4.12,
+          "explanation": "",
+          "start": 3.6,
+          "text": "Soy",
+          "translation": "I am",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 4.98,
+          "explanation": "",
+          "start": 4.12,
+          "text": "un burro.",
+          "translation": "a donkey.",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 6.36,
+          "explanation": "",
+          "start": 5.42,
+          "text": "Me llamo",
+          "translation": "My name is",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 7.04,
+          "explanation": "",
+          "start": 6.36,
+          "text": "Beto.",
+          "translation": "Beto.",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 8.36,
+          "explanation": "",
+          "start": 7.7,
+          "text": "Tengo",
+          "translation": "I have",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 8.86,
+          "explanation": "",
+          "start": 8.4,
+          "text": "botas.",
+          "translation": "boots.",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 9.92,
+          "explanation": "",
+          "start": 9.46,
+          "text": "Tengo",
+          "translation": "I have",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 10.52,
+          "explanation": "",
+          "start": 9.92,
+          "text": "botas",
+          "translation": "boots",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+    <Lect
+      lect={
+        Object {
+          "end": 11.6,
+          "explanation": "",
+          "start": 10.68,
+          "text": "para bailar.",
+          "translation": "for dancing.",
+        }
+      }
+      readTime={12.34}
+      shouldHighlight={false}
+      showModal="showModal123"
+    />
+  </div>
+</div>
+`;
