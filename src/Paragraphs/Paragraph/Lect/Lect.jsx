@@ -2,7 +2,7 @@ import React from 'react';
 import './Lect.css';
 
 export const ENDING_PUNCTUATION = ['.', '!', '?'];
-export const getSpacer = text => (ENDING_PUNCTUATION.includes(text.slice(-1)) ? '  ' : ' ');
+export const getSpacer = text => (ENDING_PUNCTUATION.includes(text?.slice(-1)) ? '  ' : ' ');
 
 const Lect = ({ lect, shouldHighlight, showModal }) => {
   if (!lect) {
