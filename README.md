@@ -20,9 +20,11 @@ or
 yarn add react-lectorem
 ```
 
+## See It in Use
+
 [![link to demo video](http://img.youtube.com/vi/HQ0zgyx0alY/0.jpg)](http://www.youtube.com/watch?v=HQ0zgyx0alY "React Lectorem Demo")
 
-## Sample Usage
+## Sample Code
 
 ```javascript
 import React from 'react';
@@ -132,13 +134,13 @@ The shape of the data will be:
           "start": 17.57,
           "end": 19.319,
           "text": "Ding, dang, dong.",
-          "explanation": "An onomonapia for bells, like our \"ding dong\"."
+          "explanation": "An onomatopoeia for bells ringing, like our \"ding dong\"."
         },
         {
           "start": 19.784,
           "end": 21.632,
           "text": "Ding, dang, dong.",
-          "explanation": "An onomonapia for bells, like our \"ding dong\"."
+          "explanation": "An onomatopoeia for bells ringing, like our \"ding dong\"."
         }
       ]
     }

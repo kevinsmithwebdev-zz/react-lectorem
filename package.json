@@ -1,6 +1,6 @@
 {
   "name": "react-lectorem",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "React library to sync audio and text, highlighting the text as the audio \"reads\" it",
   "main": "./lib/Lectorem.js",
   "repository": {
