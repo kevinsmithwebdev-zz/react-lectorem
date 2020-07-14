@@ -8,8 +8,6 @@ This is a React module to synchronize text and speech. A small player allows the
 
 This was built to help teaching foreign languages.
 
-https://youtu.be/rcdmGNYO0pE
-
 ## Install
 
 ```bash
