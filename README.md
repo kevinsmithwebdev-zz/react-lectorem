@@ -13,14 +13,16 @@ This was built to help teaching foreign languages.
 ```bash
 npm install --save react-lectorem
 ```
+
 or
+
 ```bash
 yarn add react-lectorem
 ```
 
 ## See It in Use
 
-[![link to demo video](http://img.youtube.com/vi/HQ0zgyx0alY/0.jpg)](http://www.youtube.com/watch?v=HQ0zgyx0alY "React Lectorem Demo")
+[![link to demo video](http://img.youtube.com/vi/HQ0zgyx0alY/0.jpg)](http://www.youtube.com/watch?v=HQ0zgyx0alY 'React Lectorem Demo')
 
 Note: This may not be the most recent version.
 
@@ -30,17 +32,17 @@ Note: This may not be the most recent version.
 import React from 'react';
 import Lectorem from 'react-lectorem';
 
-const App = ({ storyData }) => (
-  <Lectorem data={ storyData } />
-);
+const App = ({ storyData }) => <Lectorem data={storyData} />;
 
 export default App;
 ```
 
 ## Data
+
 The data are urls for the relevant files (audio and images) and the text broken up into strings ("lects") with associated time codes. The text is broken up into paragraphs with optional headers and images. The paragraph header can have it's own highlighted text.
 
 The shape of the data will be:
+
 ```json
 {
   "audioPath": "./frere.mp3",
@@ -57,7 +59,7 @@ The shape of the data will be:
           "end": 5.511,
           "text": "Frère",
           "translation": "Brother",
-          "explanation":"\"Brother\" in this sense means the title of a monk. \"Frère\" is also where we get our word \"friar\""
+          "explanation": "\"Brother\" in this sense means the title of a monk. \"Frère\" is also where we get our word \"friar\""
         },
         {
           "start": 5.51,
@@ -71,7 +73,7 @@ The shape of the data will be:
           "end": 7.683,
           "text": "Frère",
           "translation": "Brother",
-          "explanation":"\"Brother\" in this sense means the title of a monk. \"Frère\" is also where we get our word \"friar\""
+          "explanation": "\"Brother\" in this sense means the title of a monk. \"Frère\" is also where we get our word \"friar\""
         },
         {
           "start": 7.68,

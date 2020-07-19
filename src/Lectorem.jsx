@@ -9,9 +9,11 @@ class Lectorem extends Component {
   state = {
     modalData: null,
     readTime: 0,
-  }
+  };
 
-  showModal = lect => (lect.translation || lect.explanation) && this.setState({ modalData: lect });
+  showModal = lect =>
+    (lect.translation || lect.explanation) &&
+    this.setState({ modalData: lect });
 
   hideModal = () => this.setState({ modalData: null });
 
@@ -24,33 +26,24 @@ class Lectorem extends Component {
       return <p>Loading...</p>;
     }
 
-    const {
-      title, subtitle, audioPath, paragraphs,
-    } = data;
+    const { title, subtitle, audioPath, paragraphs } = data;
 
     return (
-      <div className='Lectorem'>
-        { !!title && <h2>{ title } </h2> }
-        { !!subtitle && <h3>{ subtitle } </h3> }
-        <div className='playerContainer'>
-          <Player
-            audioPath={ audioPath }
-            onListen={ this.setReadTime }
-          />
+      <div className="Lectorem">
+        {!!title && <h2>{title} </h2>}
+        {!!subtitle && <h3>{subtitle} </h3>}
+        <div className="playerContainer">
+          <Player audioPath={audioPath} onListen={this.setReadTime} />
         </div>
-        <div className='lectsContainer'>
+        <div className="lectsContainer">
           <Paragraphs
-            paragraphs={ paragraphs }
-            readTime={ this.state.readTime }
-            showModal={ this.showModal }
+            paragraphs={paragraphs}
+            readTime={this.state.readTime}
+            showModal={this.showModal}
           />
         </div>
 
-        <Modal
-          data={ this.state.modalData }
-          hideModal={ this.hideModal }
-        />
-
+        <Modal data={this.state.modalData} hideModal={this.hideModal} />
       </div>
     );
   }

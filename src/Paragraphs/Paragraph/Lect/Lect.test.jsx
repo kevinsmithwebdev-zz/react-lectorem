@@ -1,6 +1,11 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import Lect, { getSpacer, getHasModalInformation, getClassName, ENDING_PUNCTUATION } from './Lect';
+import Lect, {
+  getSpacer,
+  getHasModalInformation,
+  getClassName,
+  ENDING_PUNCTUATION,
+} from './Lect';
 import storyData from '../../../../fixture/storyData.json';
 
 const mockLect = storyData.paragraphs[0].lects[0];
@@ -22,14 +27,14 @@ describe('Lect', () => {
 
     describe('with data, should highlight', () => {
       it('should render and match snapshot', () => {
-        renderer.render(<Lect { ...props } shouldHighlight />);
+        renderer.render(<Lect {...props} shouldHighlight />);
         expect(renderer.getRenderOutput()).toMatchSnapshot();
       });
     });
 
     describe('with data, should not highlight', () => {
       it('should render and match snapshot', () => {
-        renderer.render(<Lect { ...props } shouldHighlight={ false } />);
+        renderer.render(<Lect {...props} shouldHighlight={false} />);
         expect(renderer.getRenderOutput()).toMatchSnapshot();
       });
     });
@@ -57,15 +62,31 @@ describe('Lect', () => {
 
   describe('getHasModalInformation', () => {
     const testData = [
-      { lect: { explanation: undefined, translation: undefined }, result: false },
-      { lect: { explanation: undefined, translation: 'something' }, result: true },
-      { lect: { explanation: 'something', translation: undefined }, result: true },
-      { lect: { explanation: 'something', translation: 'something' }, result: true },
+      {
+        lect: { explanation: undefined, translation: undefined },
+        result: false,
+      },
+      {
+        lect: { explanation: undefined, translation: 'something' },
+        result: true,
+      },
+      {
+        lect: { explanation: 'something', translation: undefined },
+        result: true,
+      },
+      {
+        lect: { explanation: 'something', translation: 'something' },
+        result: true,
+      },
     ];
-    const getLectPropText = (lect, prop) => lect[prop] ? `has ${prop}` : `does not have ${prop}`;
+    const getLectPropText = (lect, prop) =>
+      lect[prop] ? `has ${prop}` : `does not have ${prop}`;
 
-    testData.forEach(({ lect, result}) => {
-      describe(`when ${getLectPropText(lect, 'explanation')} and ${getLectPropText(lect, 'translation')}`, () => {
+    testData.forEach(({ lect, result }) => {
+      describe(`when ${getLectPropText(
+        lect,
+        'explanation'
+      )} and ${getLectPropText(lect, 'translation')}`, () => {
         it(`should return ${result}`, () => {
           expect(getHasModalInformation(lect)).toBe(result);
         });
@@ -81,12 +102,16 @@ describe('Lect', () => {
       { flags: [true, true], result: 'Lect highlighted clickable' },
     ];
 
-    testData.forEach(({ flags: [shouldHighlight, hasModalInformation], result}) => {
-      describe(`when shouldHighlight is ${shouldHighlight} and hasModalInformation is ${hasModalInformation}`, () => {
-        it(`should return ${result}`, () => {
-          expect(getClassName(shouldHighlight, hasModalInformation)).toBe(result);
+    testData.forEach(
+      ({ flags: [shouldHighlight, hasModalInformation], result }) => {
+        describe(`when shouldHighlight is ${shouldHighlight} and hasModalInformation is ${hasModalInformation}`, () => {
+          it(`should return ${result}`, () => {
+            expect(getClassName(shouldHighlight, hasModalInformation)).toBe(
+              result
+            );
+          });
         });
-      });
-    });
+      }
+    );
   });
 });

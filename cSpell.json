@@ -1,14 +1,6 @@
 {
-  "_comment1": "This file helps people using the Code Speller package.",
   "version": "0.1",
   "language": "en",
-  "_comment2": "'words' is an array of whitelisted words",
-  "words": [
-    "lectorem",
-    "lect",
-    "lects"
-  ],
-  "_comment3": "'flagWords' is an array of blacklisted words",
-  "flagWords": [
-  ]
+  "words": ["lectorem", "lect", "lects", "linebreak", "parens", "stylelint"],
+  "flagWords": []
 }

@@ -8,17 +8,15 @@ const Paragraphs = ({ paragraphs, readTime, showModal }) => {
     return null;
   }
 
-  return paragraphs.map(
-    (paragraph, idx) => (
-      <Paragraph
-        paragraph={ paragraph }
-        key={ idx.toString() }
-        idx={ idx }
-        readTime={ readTime }
-        showModal={ showModal }
-      />
-    ),
-  );
+  return paragraphs.map((paragraph, idx) => (
+    <Paragraph
+      paragraph={ paragraph }
+      key={ idx.toString() }
+      idx={ idx }
+      readTime={ readTime }
+      showModal={ showModal }
+    />
+  ));
 };
 
 export default Paragraphs;

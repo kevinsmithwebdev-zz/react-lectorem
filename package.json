@@ -1,6 +1,6 @@
 {
   "name": "react-lectorem",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "React library to sync audio and text, highlighting the text as the audio \"reads\" it",
   "main": "./lib/Lectorem.js",
   "repository": {
@@ -51,7 +51,6 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "path": "^0.12.7",
-    "prettier": "2.0.5",
     "prop-types": "^15.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -81,7 +80,6 @@
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "./node_modules/.bin/stylelint src/**/*",
     "lint:js": "./node_modules/.bin/eslint --cache --no-error-on-unmatched-pattern --max-warnings 0 src/**/*.js src/**/*.jsx",
-    "prettier": "npm prettier --check",
     "test": "jest",
     "validate": "npm run test && npm run lint"
   }

@@ -1,6 +1,10 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import Paragraph, { getShouldHighlight, renderLect, TIME_CODE_FUDGE } from './Paragraph';
+import Paragraph, {
+  getShouldHighlight,
+  renderLect,
+  TIME_CODE_FUDGE,
+} from './Paragraph';
 import storyData from '../../../fixture/storyData.json';
 
 const mockParagraph = storyData.paragraphs[0];
@@ -24,7 +28,7 @@ describe('Paragraph', () => {
       };
 
       it('should render and match snapshot', () => {
-        renderer.render(<Paragraph { ...props } />);
+        renderer.render(<Paragraph {...props} />);
         expect(renderer.getRenderOutput()).toMatchSnapshot();
       });
     });
@@ -51,7 +55,7 @@ describe('Paragraph', () => {
     });
 
     describe('when readTime is well within start and stop', () => {
-      const readTime = lect.start + ((lect.end - lect.start) / 2);
+      const readTime = lect.start + (lect.end - lect.start) / 2;
       it('should return true', () => {
         expect(getShouldHighlight(lect, readTime)).toBe(true);
       });

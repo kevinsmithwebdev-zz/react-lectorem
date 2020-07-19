@@ -17,7 +17,7 @@ describe('Lectorem', () => {
     describe('with undefined data', () => {
       const props = { data: undefined };
       it('should render without crashing', () => {
-        renderer.render(<Lectorem { ...props } />);
+        renderer.render(<Lectorem {...props} />);
         expect(renderer.getRenderOutput()).toMatchSnapshot();
       });
     });
@@ -26,7 +26,7 @@ describe('Lectorem', () => {
       describe('with all data', () => {
         const props = { data: storyData };
         it('should render without crashing', () => {
-          renderer.render(<Lectorem { ...props } />);
+          renderer.render(<Lectorem {...props} />);
           expect(renderer.getRenderOutput()).toMatchSnapshot();
         });
       });
@@ -36,7 +36,7 @@ describe('Lectorem', () => {
         delete data.title;
         const props = { data };
         it('should render without crashing', () => {
-          renderer.render(<Lectorem { ...props } />);
+          renderer.render(<Lectorem {...props} />);
           expect(renderer.getRenderOutput()).toMatchSnapshot();
         });
       });
@@ -46,7 +46,7 @@ describe('Lectorem', () => {
         delete data.subtitle;
         const props = { data };
         it('should render without crashing', () => {
-          renderer.render(<Lectorem { ...props } />);
+          renderer.render(<Lectorem {...props} />);
           expect(renderer.getRenderOutput()).toMatchSnapshot();
         });
       });
@@ -77,7 +77,10 @@ describe('Lectorem', () => {
     });
 
     describe('when lect has translation and has explanation', () => {
-      const lect = { explanation: 'explanation123', translation: 'translation123' };
+      const lect = {
+        explanation: 'explanation123',
+        translation: 'translation123',
+      };
       const component = new Lectorem();
       component.setState = jest.fn();
       component.showModal(lect);
@@ -88,7 +91,7 @@ describe('Lectorem', () => {
     });
 
     describe('when lect has neither translation nor explanation', () => {
-      const lect = { };
+      const lect = {};
       const component = new Lectorem();
       component.setState = jest.fn();
       component.showModal(lect);
