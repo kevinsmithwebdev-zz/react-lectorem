@@ -22,6 +22,8 @@ yarn add react-lectorem
 
 [![link to demo video](http://img.youtube.com/vi/HQ0zgyx0alY/0.jpg)](http://www.youtube.com/watch?v=HQ0zgyx0alY "React Lectorem Demo")
 
+Note: This may not be the most recent version.
+
 ## Sample Code
 
 ```javascript

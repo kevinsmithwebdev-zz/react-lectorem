@@ -4,16 +4,26 @@ This is an open source project. Before trying to contribute, read our [Code of C
 
 We are open to contributions, but still have a vision for how things should be.
 
-If you find a bug, please raise and issue. If you have an idea, bring it up as an issue so you don't waste time.
+If you find a bug, please raise an issue. If you have an idea, bring it up as an issue so you don't waste time adding something that we won't want.
 
-I don't have a style guide yet, but please try to mimic what you see.
+We don't have a style guide yet, but please try to mimic what you see.
 
-Think we would like to see improved:
+Things we would like to see improved:
 
 - Convert to typescript.
 - Convert to SASS.
 - Convert the Player to a functional component - there are issues with packages using hooks.
-- Improve testing.
 - Double-Clicking on a lect will cause the player to play from there.
-- Allow css info to be passed in as optional props.
+- Allow css info to be passed in as optional props. Basically, allowing the consuming app to pass in their own parameters.
 - Allow different sizes of texts, improve spacing.
+
+## Steps to contribute.
+
+1. Find an existing issue and claim it ... or create an issue, get it approved, and claim it.
+2. Fork the repo.
+3. Create an appropriately named branch.
+4. Make your changes.
+5. Test your changes.
+6. Run `npm run validate` to confirm you haven't broken anything.
+7. Add and commit your changes.
+8. Make your pull request - reference the relevant issue number in the PR with a preceding "#", like "Issue: #12".

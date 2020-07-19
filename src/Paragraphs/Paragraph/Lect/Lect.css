@@ -12,3 +12,7 @@
 .highlighted {
   color: red;
 }
+
+.clickable {
+  cursor: pointer;
+}
