@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Player from './Player/Player';
 import './Lectorem.css';
 import Modal from './Modal/Modal';
-import Paragraphs from './Paragraphs/Paragraphs';
+import Texts from './Texts/Texts';
 
 // TODO: issues with packages using hooks
 class Lectorem extends Component {
@@ -20,30 +20,33 @@ class Lectorem extends Component {
   setReadTime = readTime => this.setState({ readTime });
 
   render() {
-    const { data } = this.props;
+    const { data, configuration } = this.props;
 
     if (!data) {
       return <p>Loading...</p>;
     }
 
-    const { title, subtitle, audioPath, paragraphs } = data;
+    const {
+      title, subtitle, audioPath, paragraphs,
+    } = data;
 
     return (
-      <div className="Lectorem">
-        {!!title && <h2>{title} </h2>}
-        {!!subtitle && <h3>{subtitle} </h3>}
-        <div className="playerContainer">
-          <Player audioPath={audioPath} onListen={this.setReadTime} />
+      <div className='Lectorem'>
+        { !!title && <h2>{title} </h2> }
+        { !!subtitle && <h3>{subtitle} </h3> }
+        <div className='playerContainer'>
+          <Player audioPath={ audioPath } onListen={ this.setReadTime } />
         </div>
-        <div className="lectsContainer">
-          <Paragraphs
-            paragraphs={paragraphs}
-            readTime={this.state.readTime}
-            showModal={this.showModal}
+        <div className='lectsContainer'>
+          <Texts
+            configuration={ configuration }
+            paragraphs={ paragraphs }
+            readTime={ this.state.readTime }
+            showModal={ this.showModal }
           />
         </div>
 
-        <Modal data={this.state.modalData} hideModal={this.hideModal} />
+        <Modal data={ this.state.modalData } hideModal={ this.hideModal } />
       </div>
     );
   }

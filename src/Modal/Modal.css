@@ -11,7 +11,8 @@
   transform: translate(-50%, -50%);
   visibility: visible;
   min-width: 200px;
-  max-width: 500px;
+  width: 75%;
+  max-width: 800px;
   z-index: 100;
   overflow: auto;
 }

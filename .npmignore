@@ -1,7 +1,9 @@
 .babelrc
+.fixture
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 cSpell.json
+coverage
 demo
 README.md
 src

@@ -16,7 +16,12 @@
     "text",
     "audio",
     "sync",
-    "synchronization"
+    "synchronization",
+    "front-end",
+    "frontend",
+    "language",
+    "learning",
+    "education"
   ],
   "author": "Kevin Smith",
   "license": "MIT",

@@ -1,0 +1,18 @@
+.Texts .block {
+  display: flex;
+  padding: 10px;
+}
+
+.Texts .block.even {
+  background-color: #eee;
+  border-radius: 2px;
+}
+
+.Texts .below {
+  flex-direction: column;
+  justify-content: start;
+}
+
+.Texts .beside {
+  flex-direction: row;
+}

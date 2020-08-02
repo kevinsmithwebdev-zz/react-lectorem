@@ -6,7 +6,7 @@ import Lect, {
   getClassName,
   ENDING_PUNCTUATION,
 } from './Lect';
-import storyData from '../../../../fixture/storyData.json';
+import storyData from '../../../../../fixture/storyData.json';
 
 const mockLect = storyData.paragraphs[0].lects[0];
 

@@ -1,0 +1,29 @@
+.Sentence {
+  /* display: flex; */
+}
+
+.SentenceColumn {
+  flex-direction: column;
+}
+
+.SentenceRow {
+  flex-direction: row;
+}
+
+.SentenceLectsWrapper {
+  flex: 1;
+}
+
+.SentenceTranslationWrapper {
+  flex: 1;
+  font-style: italic;
+}
+
+.SentenceTranslationColumn {
+  font-size: 18px;
+  padding-bottom: 4px;
+}
+
+.SentenceTranslationRow {
+  font-size: 24px;
+}

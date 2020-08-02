@@ -1,7 +1,7 @@
 .Lect {
   font-size: 24px;
   font-weight: bold;
-  line-height: 150%;
+  /* line-height: 150%; */
   white-space: pre-wrap;
 }
 

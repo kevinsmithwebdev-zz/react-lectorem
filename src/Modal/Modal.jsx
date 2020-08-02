@@ -13,7 +13,6 @@ const Modal = ({ data, hideModal }) => {
   if (!data) {
     return null;
   }
-
   return (
     <div className='Modal'>
       <div className='header'>
@@ -25,8 +24,10 @@ const Modal = ({ data, hideModal }) => {
         </button>
       </div>
 
-      {renderLine('Original Text', data.text)}
+      {renderLine('Text', data.text)}
       {renderLine('Translation', data.translation)}
+      {renderLine('Full Text', data.originalSentence)}
+      {renderLine('Full Translation', data.sentenceTranslation)}
       {renderLine('Explanation', data.explanation)}
     </div>
   );
