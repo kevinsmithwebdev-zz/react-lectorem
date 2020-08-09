@@ -57,9 +57,6 @@
     "jest": "^26.1.0",
     "path": "^0.12.7",
     "prop-types": "^15.6.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
     "react-test-renderer": "^16.13.1",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
@@ -69,15 +66,16 @@
   "peerDependencies": {
     "json-parse-better-errors": "1.0.2",
     "prop-types": "^15.6.0",
-    "react-audio-player": "0.13.0",
-    "react-dom": "16.13.1",
-    "react-hot-loader": "4.12.20",
-    "react": "16.13.1"
+    "react": ">=16.13.1",
+    "react-dom": ">=16.13.1"
   },
   "dependencies": {
     "lodash": "^4.17.19",
-    "react-audio-player": "0.13.0",
-    "react-icons": "^3.10.0"
+    "react": "^16.13.1",
+    "react-audio-player": "^0.13.0",
+    "react-dom": ">=16.13.1",
+    "react-icons": "^3.10.0",
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "build": "rm -rf lib && webpack",
@@ -85,6 +83,7 @@
     "lint": "npm run lint:css && npm run lint:js",
     "lint:css": "./node_modules/.bin/stylelint src/**/*",
     "lint:js": "./node_modules/.bin/eslint --cache --no-error-on-unmatched-pattern --max-warnings 0 src/**/*.js src/**/*.jsx",
+    "start:demo": "react-scripts start ./demo/App.js",
     "test": "jest",
     "validate": "npm run test && npm run lint"
   }

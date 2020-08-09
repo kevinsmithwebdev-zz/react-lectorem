@@ -8,6 +8,7 @@ module.exports = {
     'airbnb',
     'plugin:css-modules/recommended',
     'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
   ],
   parser: 'babel-eslint',
   parserOptions: {

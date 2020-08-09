@@ -29,7 +29,7 @@ exports[`Lectorem the main component render with data with all data should rende
   <div
     className="lectsContainer"
   >
-    <Paragraphs
+    <Texts
       paragraphs={
         Array [
           Object {
@@ -125,7 +125,7 @@ exports[`Lectorem the main component render with data with all data should rende
           },
         ]
       }
-      readTime={0}
+      readTime={null}
       showModal={[Function]}
     />
   </div>
@@ -155,7 +155,7 @@ exports[`Lectorem the main component render with data with data missing subtitle
   <div
     className="lectsContainer"
   >
-    <Paragraphs
+    <Texts
       paragraphs={
         Array [
           Object {
@@ -251,7 +251,7 @@ exports[`Lectorem the main component render with data with data missing subtitle
           },
         ]
       }
-      readTime={0}
+      readTime={null}
       showModal={[Function]}
     />
   </div>
@@ -281,7 +281,7 @@ exports[`Lectorem the main component render with data with data missing title sh
   <div
     className="lectsContainer"
   >
-    <Paragraphs
+    <Texts
       paragraphs={
         Array [
           Object {
@@ -377,7 +377,7 @@ exports[`Lectorem the main component render with data with data missing title sh
           },
         ]
       }
-      readTime={0}
+      readTime={null}
       showModal={[Function]}
     />
   </div>

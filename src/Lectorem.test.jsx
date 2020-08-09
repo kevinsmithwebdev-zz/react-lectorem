@@ -1,7 +1,7 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 import cloneDeep from 'lodash/cloneDeep';
-import Lectorem from './Lectorem';
+import Lectorem, { createShowModal, createHideModal } from './Lectorem';
 import storyData from '../fixture/storyData.json';
 
 describe('Lectorem', () => {
@@ -53,72 +53,56 @@ describe('Lectorem', () => {
     });
   });
 
-  describe('showModal', () => {
-    describe('when lect has translation but no explanation', () => {
-      const lect = { translation: 'translation123' };
-      const component = new Lectorem();
-      component.setState = jest.fn();
-      component.showModal(lect);
-      it('should call setState with correct object', () => {
-        const expectedParam = { modalData: lect };
-        expect(component.setState).toBeCalledWith(expectedParam);
+  describe('createShowModal', () => {
+    const setModalData = jest.fn();
+    const showModal = createShowModal(setModalData);
+    describe('the function it returns', () => {
+      describe('when lect has translation but no explanation', () => {
+        const lect = { translation: 'translation123' };
+        beforeAll(() => {
+          setModalData.mockReset();
+          showModal(lect);
+        });
+        it('should call setModalData with correct lect', () => {
+          expect(setModalData).toBeCalledWith(lect);
+        });
       });
-    });
 
-    describe('when lect no translation but has explanation', () => {
-      const lect = { explanation: 'explanation123' };
-      const component = new Lectorem();
-      component.setState = jest.fn();
-      component.showModal(lect);
-      it('should call setState with correct object', () => {
-        const expectedParam = { modalData: lect };
-        expect(component.setState).toBeCalledWith(expectedParam);
+      describe('when lect no translation but has explanation', () => {
+        const lect = { explanation: 'explanation123' };
+        beforeAll(() => {
+          setModalData.mockReset();
+          showModal(lect);
+        });
+        it('should call setModalData with correct lect', () => {
+          expect(setModalData).toBeCalledWith(lect);
+        });
       });
-    });
 
-    describe('when lect has translation and has explanation', () => {
-      const lect = {
-        explanation: 'explanation123',
-        translation: 'translation123',
-      };
-      const component = new Lectorem();
-      component.setState = jest.fn();
-      component.showModal(lect);
-      it('should call setState with correct object', () => {
-        const expectedParam = { modalData: lect };
-        expect(component.setState).toBeCalledWith(expectedParam);
-      });
-    });
-
-    describe('when lect has neither translation nor explanation', () => {
-      const lect = {};
-      const component = new Lectorem();
-      component.setState = jest.fn();
-      component.showModal(lect);
-      it('should call setState with correct object', () => {
-        expect(component.setState).not.toBeCalled();
+      describe('when lect has neither translation nor explanation', () => {
+        const lect = { other: 'data' };
+        beforeAll(() => {
+          setModalData.mockReset();
+          showModal(lect);
+        });
+        it('should call not call setModalData ', () => {
+          expect(setModalData).not.toBeCalled();
+        });
       });
     });
   });
 
-  describe('hideModal', () => {
-    const component = new Lectorem();
-    component.setState = jest.fn();
-    component.hideModal();
-    it('should call setState with correct object', () => {
-      const expectedParam = { modalData: null };
-      expect(component.setState).toBeCalledWith(expectedParam);
-    });
-  });
-
-  describe('setReadTime', () => {
-    const readTime = 3.1459;
-    const component = new Lectorem();
-    component.setState = jest.fn();
-    component.setReadTime(readTime);
-    it('should call setState with correct object', () => {
-      const expectedParam = { readTime };
-      expect(component.setState).toBeCalledWith(expectedParam);
+  describe('createHideModal', () => {
+    const setModalData = jest.fn();
+    const hideModal = createHideModal(setModalData);
+    describe('the function it returns', () => {
+      beforeAll(() => {
+        setModalData.mockReset();
+        hideModal();
+      });
+      it('should call setModalData with null', () => {
+        expect(setModalData).toBeCalledWith(null);
+      });
     });
   });
 });
