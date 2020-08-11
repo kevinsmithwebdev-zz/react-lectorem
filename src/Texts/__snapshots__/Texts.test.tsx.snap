@@ -1,0 +1,1067 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Texts the main component render with data, !isBySentence should render and match snapshot 1`] = `
+<div
+  className="Texts"
+>
+  <div>
+    <div
+      className="header"
+    >
+      <div>
+        <img
+          alt="header 0"
+          src="./frere.png"
+          width="150px"
+        />
+      </div>
+    </div>
+    <div
+      className="block beside even"
+    >
+      <TextBlock
+        block={
+          Object {
+            "header": Object {
+              "imagePath": "./frere.png",
+            },
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 5.511,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 4.424,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 6.533,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 5.51,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 7.683,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 6.618,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 8.79,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 7.68,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={0}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "header": Object {
+              "imagePath": "./frere.png",
+            },
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 5.511,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 4.424,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 6.533,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 5.51,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 7.683,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 6.618,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 8.79,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 7.68,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside "
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 10.857,
+                    "start": 8.831,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 12.71,
+                    "start": 11.025,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={1}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 10.857,
+                    "start": 8.831,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 12.71,
+                    "start": 11.025,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside even"
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 13.706,
+                    "start": 13.21,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 15.399,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 13.704,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 15.924,
+                    "start": 15.39,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 17.572,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 15.923,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={2}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 13.706,
+                    "start": 13.21,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 15.399,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 13.704,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 15.924,
+                    "start": 15.39,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 17.572,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 15.923,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside "
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 19.319,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 17.57,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 21.632,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 19.784,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={3}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 19.319,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 17.57,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 21.632,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 19.784,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": false,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Texts the main component render with data, isBySentence should render and match snapshot 1`] = `
+<div
+  className="Texts"
+>
+  <div>
+    <div
+      className="header"
+    >
+      <div>
+        <img
+          alt="header 0"
+          src="./frere.png"
+          width="150px"
+        />
+      </div>
+    </div>
+    <div
+      className="block beside even"
+    >
+      <TextBlock
+        block={
+          Object {
+            "header": Object {
+              "imagePath": "./frere.png",
+            },
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 5.511,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 4.424,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 6.533,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 5.51,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={0}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "header": Object {
+              "imagePath": "./frere.png",
+            },
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 5.511,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 4.424,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 6.533,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 5.51,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside "
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 7.683,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 6.618,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 8.79,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 7.68,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={1}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 7.683,
+                    "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+                    "start": 6.618,
+                    "text": "Frère",
+                    "translation": "Brother",
+                  },
+                  Object {
+                    "end": 8.79,
+                    "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+                    "start": 7.68,
+                    "text": "Jacques",
+                    "translation": "James",
+                  },
+                  Object {
+                    "text": ".",
+                  },
+                ],
+                "sentenceTranslation": "Brother James.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside even"
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 10.857,
+                    "start": 8.831,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={2}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 10.857,
+                    "start": 8.831,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside "
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 12.71,
+                    "start": 11.025,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={3}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 12.71,
+                    "start": 11.025,
+                    "text": "Dormez-vous?",
+                    "translation": "Are you sleeping?",
+                  },
+                ],
+                "sentenceTranslation": "Are you sleeping?",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside even"
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 13.706,
+                    "start": 13.21,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 15.399,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 13.704,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={4}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 13.706,
+                    "start": 13.21,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 15.399,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 13.704,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside "
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 15.924,
+                    "start": 15.39,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 17.572,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 15.923,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={5}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 15.924,
+                    "start": 15.39,
+                    "text": "Sonnez",
+                    "translation": "Ring",
+                  },
+                  Object {
+                    "end": 17.572,
+                    "explanation": "These were the bells to wake the monks for the \\"matins\\", the first chants in the day, very early in the morning.",
+                    "start": 15.923,
+                    "text": "les matines",
+                    "translation": "the morning bells",
+                  },
+                  Object {
+                    "text": "!",
+                  },
+                ],
+                "sentenceTranslation": "Ring the morning bells!",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside even"
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 19.319,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 17.57,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={6}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 19.319,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 17.57,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+  <div>
+    <div
+      className="header"
+    />
+    <div
+      className="block beside "
+    >
+      <TextBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 21.632,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 19.784,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+        idx={7}
+        readTime={123.45}
+        showModal={[Function]}
+      />
+      <TranslationBlock
+        block={
+          Object {
+            "sentences": Array [
+              Object {
+                "lects": Array [
+                  Object {
+                    "end": 21.632,
+                    "explanation": "An onomatopoeia for bells, like our \\"ding dong\\".",
+                    "start": 19.784,
+                    "text": "Ding, dang, dong.",
+                  },
+                ],
+                "sentenceTranslation": "Ding, dang, dong.",
+              },
+            ],
+          }
+        }
+        configuration={
+          Object {
+            "isBySentence": true,
+            "isTranslationBelow": false,
+            "shouldShowTranslation": false,
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;

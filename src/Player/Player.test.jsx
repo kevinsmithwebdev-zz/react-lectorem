@@ -1,6 +1,6 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
-import Player from './Player';
+import Player from './Player.tsx';
 
 describe('Player', () => {
   describe('the main component render', () => {

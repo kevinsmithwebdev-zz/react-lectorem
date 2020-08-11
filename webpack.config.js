@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './src/Lectorem.jsx',
+  entry: './src/Lectorem.tsx',
   output: {
     path: path.resolve('lib'),
     filename: 'Lectorem.js',
@@ -16,13 +16,18 @@ module.exports = {
         use: 'babel-loader',
       },
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
     ],
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.tsx', '.ts'],
   },
   externals: {
     react: {

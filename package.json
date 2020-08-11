@@ -31,8 +31,10 @@
   "homepage": "https://github.com/kevinsmithwebdev/react-lectorem.git#readme",
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@types/jest": "^26.0.3",
-    "@types/react": "^16.9.41",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.45",
     "@types/react-dom": "^16.9.8",
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^3.6.0",
@@ -60,6 +62,7 @@
     "react-test-renderer": "^16.13.1",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0",
+    "ts-loader": "^8.0.2",
     "webpack": "^4.5.0",
     "webpack-cli": "^3.2.1"
   },
@@ -70,12 +73,14 @@
     "react-dom": ">=16.13.1"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.159",
     "lodash": "^4.17.19",
     "react": "^16.13.1",
     "react-audio-player": "^0.13.0",
     "react-dom": ">=16.13.1",
     "react-icons": "^3.10.0",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.1",
+    "typescript": "^3.9.7"
   },
   "scripts": {
     "build": "rm -rf lib && webpack",

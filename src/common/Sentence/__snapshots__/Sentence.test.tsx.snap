@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sentence renderLect if should be highlighted should render and match snapshot 1`] = `
+<Lect
+  isFirst={false}
+  isLast={false}
+  lect={
+    Object {
+      "end": 5.511,
+      "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+      "start": 4.424,
+      "text": "Frère",
+      "translation": "Brother",
+    }
+  }
+  originalSentence="original sentence 123"
+  sentenceTranslation="sentence translation 123"
+  shouldHighlight={true}
+  showModal={[Function]}
+/>
+`;
+
+exports[`Sentence renderLect if should not be highlighted should render and match snapshot 1`] = `
+<Lect
+  isFirst={false}
+  isLast={false}
+  lect={
+    Object {
+      "end": 5.511,
+      "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+      "start": 4.424,
+      "text": "Frère",
+      "translation": "Brother",
+    }
+  }
+  originalSentence="original sentence 123"
+  sentenceTranslation="sentence translation 123"
+  shouldHighlight={false}
+  showModal={[Function]}
+/>
+`;
+
+exports[`Sentence the main component render with data should render and match snapshot 1`] = `
+<span
+  className="Sentence "
+>
+  <span
+    className="SentenceLectsWrapper"
+  >
+    <Lect
+      isFirst={true}
+      isLast={false}
+      lect={
+        Object {
+          "end": 5.511,
+          "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+          "start": 4.424,
+          "text": "Frère",
+          "translation": "Brother",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+    <Lect
+      isFirst={false}
+      isLast={false}
+      lect={
+        Object {
+          "end": 6.533,
+          "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+          "start": 5.51,
+          "text": "Jacques",
+          "translation": "James",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+    <Lect
+      isFirst={false}
+      isLast={true}
+      lect={
+        Object {
+          "text": ".",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+  </span>
+</span>
+`;
+
+exports[`Sentence the main component render with data, isTranslationBelow should render and match snapshot 1`] = `
+<span
+  className="Sentence "
+>
+  <span
+    className="SentenceLectsWrapper"
+  >
+    <Lect
+      isFirst={true}
+      isLast={false}
+      lect={
+        Object {
+          "end": 5.511,
+          "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+          "start": 4.424,
+          "text": "Frère",
+          "translation": "Brother",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+    <Lect
+      isFirst={false}
+      isLast={false}
+      lect={
+        Object {
+          "end": 6.533,
+          "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+          "start": 5.51,
+          "text": "Jacques",
+          "translation": "James",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+    <Lect
+      isFirst={false}
+      isLast={true}
+      lect={
+        Object {
+          "text": ".",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+  </span>
+</span>
+`;
+
+exports[`Sentence the main component render with data, shouldShowTranslation should render and match snapshot 1`] = `
+<span
+  className="Sentence SentenceRow"
+>
+  <span
+    className="SentenceLectsWrapper"
+  >
+    <Lect
+      isFirst={true}
+      isLast={false}
+      lect={
+        Object {
+          "end": 5.511,
+          "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+          "start": 4.424,
+          "text": "Frère",
+          "translation": "Brother",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+    <Lect
+      isFirst={false}
+      isLast={false}
+      lect={
+        Object {
+          "end": 6.533,
+          "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+          "start": 5.51,
+          "text": "Jacques",
+          "translation": "James",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+    <Lect
+      isFirst={false}
+      isLast={true}
+      lect={
+        Object {
+          "text": ".",
+        }
+      }
+      originalSentence=" Frère Jacques."
+      sentenceTranslation="Brother James."
+      shouldHighlight={false}
+      showModal={[Function]}
+    />
+  </span>
+</span>
+`;

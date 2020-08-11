@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextBlock the main component render with data should render and match snapshot 1`] = `
+<div
+  className="TextBlock"
+>
+  <Sentence
+    configuration={
+      Object {
+        "isBySentence": true,
+        "isTranslationBelow": true,
+        "shouldShowTranslation": true,
+      }
+    }
+    readTime={3.1459}
+    sentence={
+      Object {
+        "lects": Array [
+          Object {
+            "end": 5.511,
+            "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+            "start": 4.424,
+            "text": "Frère",
+            "translation": "Brother",
+          },
+          Object {
+            "end": 6.533,
+            "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+            "start": 5.51,
+            "text": "Jacques",
+            "translation": "James",
+          },
+          Object {
+            "text": ".",
+          },
+        ],
+        "sentenceTranslation": "Brother James.",
+      }
+    }
+    showModal={[Function]}
+  />
+  <Sentence
+    configuration={
+      Object {
+        "isBySentence": true,
+        "isTranslationBelow": true,
+        "shouldShowTranslation": true,
+      }
+    }
+    readTime={3.1459}
+    sentence={
+      Object {
+        "lects": Array [
+          Object {
+            "end": 7.683,
+            "explanation": "\\"Brother\\" in this sense means the title of a monk. \\"Frère\\" is also where we get our word \\"friar\\"",
+            "start": 6.618,
+            "text": "Frère",
+            "translation": "Brother",
+          },
+          Object {
+            "end": 8.79,
+            "explanation": "In the English version of the song this is rendered as \\"John\\" but a more accurate translation would be \\"James\\" or \\"Jacob\\", from the Latin \\"Iacobus\\".",
+            "start": 7.68,
+            "text": "Jacques",
+            "translation": "James",
+          },
+          Object {
+            "text": ".",
+          },
+        ],
+        "sentenceTranslation": "Brother James.",
+      }
+    }
+    showModal={[Function]}
+  />
+</div>
+`;

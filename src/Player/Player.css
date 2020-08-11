@@ -1,9 +1,9 @@
-audio:focus {
-  outline: none;
-}
-
 audio {
   filter: invert(20%);
   width: 400px;
   height: 50px;
+}
+
+audio:focus {
+  outline: none;
 }

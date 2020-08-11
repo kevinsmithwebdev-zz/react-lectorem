@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lect the main component render with data, but no modal information should render and match snapshot 1`] = `
+<span
+  aria-hidden="true"
+  className="Lect unHighlighted "
+  onClick={[Function]}
+>
+   Frère
+</span>
+`;
+
+exports[`Lect the main component render with data, isFirst should render and match snapshot 1`] = `
+<span
+  aria-hidden="true"
+  className="Lect unHighlighted clickable"
+  onClick={[Function]}
+>
+  Frère
+</span>
+`;
+
+exports[`Lect the main component render with data, isLast should render and match snapshot 1`] = `
+<span
+  aria-hidden="true"
+  className="Lect unHighlighted clickable"
+  onClick={[Function]}
+>
+   Frère  
+</span>
+`;
+
+exports[`Lect the main component render with data, shouldHighlight should render and match snapshot 1`] = `
+<span
+  aria-hidden="true"
+  className="Lect highlighted clickable"
+  onClick={[Function]}
+>
+   Frère
+</span>
+`;
