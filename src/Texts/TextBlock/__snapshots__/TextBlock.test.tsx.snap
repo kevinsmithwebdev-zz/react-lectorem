@@ -9,7 +9,7 @@ exports[`TextBlock the main component render with data should render and match s
       Object {
         "isBySentence": true,
         "isTranslationBelow": true,
-        "shouldShowTranslation": true,
+        "isTranslationShown": true,
       }
     }
     readTime={3.1459}
@@ -44,7 +44,7 @@ exports[`TextBlock the main component render with data should render and match s
       Object {
         "isBySentence": true,
         "isTranslationBelow": true,
-        "shouldShowTranslation": true,
+        "isTranslationShown": true,
       }
     }
     readTime={3.1459}

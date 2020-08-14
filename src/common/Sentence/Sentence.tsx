@@ -50,13 +50,13 @@ export const renderLect = ({
 };
 
 const Sentence: React.FC<SentenceComponentInterface> = ({
-  sentence, readTime, showModal, configuration: { shouldShowTranslation, isTranslationBelow },
+  sentence, readTime, showModal, configuration: { isTranslationShown, isTranslationBelow },
 }) => {
   const translationDirectionClassName = isTranslationBelow ? 'SentenceColumn' : 'SentenceRow';
 
   const containerWrapperClassName = [
     'Sentence',
-    shouldShowTranslation ? translationDirectionClassName : '',
+    isTranslationShown ? translationDirectionClassName : '',
   ].join(' ');
 
   const originalSentence = aggregateSentence(sentence);

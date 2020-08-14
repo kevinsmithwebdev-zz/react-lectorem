@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TranslationBlock the main component render with data and shouldShowTranslation should render and match snapshot 1`] = `
+exports[`TranslationBlock the main component render with data and isTranslationShown should render and match snapshot 1`] = `
 <div
   className="TranslationBlock beside"
 >

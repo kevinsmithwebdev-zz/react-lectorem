@@ -14,9 +14,9 @@ describe('TranslationBlock', () => {
     const baseProps = { block, configuration: {}, idx, readTime, showModal };
 
     const renderer = ShallowRenderer.createRenderer();
-    describe('with data but !shouldShowTranslation', () => {
+    describe('with data but !isTranslationShown', () => {
       const configuration = {
-        shouldShowTranslation: false,
+        isTranslationShown: false,
         isTranslationBelow: false,
         isBySentence: false,
       };
@@ -31,9 +31,9 @@ describe('TranslationBlock', () => {
       });
     });
 
-    describe('with data and shouldShowTranslation', () => {
+    describe('with data and isTranslationShown', () => {
       const configuration = {
-        shouldShowTranslation: true,
+        isTranslationShown: true,
         isTranslationBelow: false,
         isBySentence: false,
       };

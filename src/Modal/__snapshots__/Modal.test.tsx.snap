@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal renderLine empty should render and not crash 1`] = `
+exports[`Modal renderLine with data should render and not crash 1`] = `
 <div
   className="line"
 >
@@ -29,7 +29,7 @@ exports[`Modal the main component render with data should render without crashin
     </h3>
     <button
       className="toggle-button"
-      onClick="hideModal123"
+      onClick={[Function]}
       type="button"
     >
       <span
@@ -66,6 +66,34 @@ exports[`Modal the main component render with data should render without crashin
       className="data"
     >
       Hello.
+    </span>
+  </div>
+  <div
+    className="line"
+  >
+    <span
+      className="label"
+    >
+      Full Text: 
+    </span>
+    <span
+      className="data"
+    >
+      original123
+    </span>
+  </div>
+  <div
+    className="line"
+  >
+    <span
+      className="label"
+    >
+      Full Translation: 
+    </span>
+    <span
+      className="data"
+    >
+      translation123
     </span>
   </div>
   <div

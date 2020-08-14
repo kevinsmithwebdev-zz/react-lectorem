@@ -12,7 +12,7 @@ describe('Sentence', () => {
       readTime: 12.34,
       showModal: () => {},
       configuration: {
-        shouldShowTranslation: false,
+        isTranslationShown: false,
         isTranslationBelow: false,
       },
     };
@@ -26,9 +26,9 @@ describe('Sentence', () => {
       });
     });
 
-    describe('with data, shouldShowTranslation', () => {
+    describe('with data, isTranslationShown', () => {
       it('should render and match snapshot', () => {
-        renderer.render(<Sentence { ...baseProps } configuration={ { ...baseProps.configuration, shouldShowTranslation: true } }/>);
+        renderer.render(<Sentence { ...baseProps } configuration={ { ...baseProps.configuration, isTranslationShown: true } }/>);
         expect(renderer.getRenderOutput()).toMatchSnapshot();
       });
     });

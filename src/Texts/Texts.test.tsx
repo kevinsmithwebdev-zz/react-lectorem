@@ -22,7 +22,7 @@ describe('Texts', () => {
 
     describe('with data, !isBySentence', () => {
       const configuration = {
-        shouldShowTranslation: false,
+        isTranslationShown: false,
         isTranslationBelow: false,
         isBySentence: false,
       };
@@ -37,7 +37,7 @@ describe('Texts', () => {
 
     describe('with data, isBySentence', () => {
       const configuration = {
-        shouldShowTranslation: false,
+        isTranslationShown: false,
         isTranslationBelow: false,
         isBySentence: true,
       };

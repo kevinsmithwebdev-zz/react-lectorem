@@ -7,7 +7,7 @@ describe('TextBlock', () => {
   describe('the main component render', () => {
     const { sentences } = storyData.paragraphs[0];
     const configuration = {
-      shouldShowTranslation: true,
+      isTranslationShown: true,
       isTranslationBelow: true,
       isBySentence: true,
     };

@@ -156,7 +156,7 @@ exports[`Sentence the main component render with data, isTranslationBelow should
 </span>
 `;
 
-exports[`Sentence the main component render with data, shouldShowTranslation should render and match snapshot 1`] = `
+exports[`Sentence the main component render with data, isTranslationShown should render and match snapshot 1`] = `
 <span
   className="Sentence SentenceRow"
 >

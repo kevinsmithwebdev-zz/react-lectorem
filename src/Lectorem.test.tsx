@@ -22,7 +22,7 @@ describe('Lectorem', () => {
       describe('with all data', () => {
         const props = {
           data: storyData,
-          configuration: { shouldShowTranslation: false, isTranslationBelow: false, isBySentence: false },
+          configuration: { isTranslationShown: false, isTranslationBelow: false, isBySentence: false },
         };
         it('should render without crashing', () => {
           renderer.render(<Lectorem {...props} />);
@@ -37,7 +37,7 @@ describe('Lectorem', () => {
             title: undefined as string,
             subtitle: undefined as string,
           },
-          configuration: { shouldShowTranslation: false, isTranslationBelow: false, isBySentence: false },
+          configuration: { isTranslationShown: false, isTranslationBelow: false, isBySentence: false },
         };
         it('should render without crashing', () => {
           renderer.render(<Lectorem {...props} />);

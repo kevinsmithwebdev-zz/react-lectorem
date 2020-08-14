@@ -14,9 +14,9 @@ export const aggregateTranslations = (sentences: SentenceInterface[]): string =>
 export const getClassName = (isTranslationBelow: boolean): string => ['TranslationBlock', isTranslationBelow ? 'below' : 'beside'].join(' ');
 
 const TranslationBlock: React.FC<TranslationBlockInterface> = (
-  { block: { sentences }, configuration: { shouldShowTranslation, isTranslationBelow } },
+  { block: { sentences }, configuration: { isTranslationShown, isTranslationBelow } }
 ) => {
-  if (!shouldShowTranslation) {
+  if (!isTranslationShown) {
     return null;
   }
 

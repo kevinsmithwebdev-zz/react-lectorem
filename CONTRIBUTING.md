@@ -10,9 +10,6 @@ We don't have a style guide yet, but please try to mimic what you see.
 
 Things we would like to see improved:
 
-- Convert to typescript.
-- Convert to SASS.
-- Convert the Player to a functional component - there are issues with packages using hooks.
 - Double-Clicking on a lect will cause the player to play from there.
 - Allow css info to be passed in as optional props. Basically, allowing the consuming app to pass in their own parameters.
 - Allow different sizes of texts, improve spacing.

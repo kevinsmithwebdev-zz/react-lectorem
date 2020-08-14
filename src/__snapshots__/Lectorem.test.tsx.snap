@@ -20,7 +20,7 @@ exports[`Lectorem the main component render with data with all data except title
         Object {
           "isBySentence": false,
           "isTranslationBelow": false,
-          "shouldShowTranslation": false,
+          "isTranslationShown": false,
         }
       }
       paragraphs={
@@ -215,7 +215,7 @@ exports[`Lectorem the main component render with data with all data should rende
         Object {
           "isBySentence": false,
           "isTranslationBelow": false,
-          "shouldShowTranslation": false,
+          "isTranslationShown": false,
         }
       }
       paragraphs={
