@@ -1,7 +1,7 @@
 import React from 'react';
 import Lect from '../Lect/Lect';
 import { getFrontSpacer } from '../../utils/punctuation';
-import './Sentence.css';
+import classes from './Sentence.module.css';
 import { LectInterface, SentenceInterface, ConfigurationInterface } from '../../interfaces/index';
 
 export const TIME_CODE_FUDGE = 0.1;
@@ -52,10 +52,10 @@ export const renderLect = ({
 const Sentence: React.FC<SentenceComponentInterface> = ({
   sentence, readTime, showModal, configuration: { isTranslationShown, isTranslationBelow },
 }) => {
-  const translationDirectionClassName = isTranslationBelow ? 'SentenceColumn' : 'SentenceRow';
+  const translationDirectionClassName = isTranslationBelow ? classes.SentenceColumn : classes.SentenceRow;
 
   const containerWrapperClassName = [
-    'Sentence',
+    classes.Sentence,
     isTranslationShown ? translationDirectionClassName : '',
   ].join(' ');
 

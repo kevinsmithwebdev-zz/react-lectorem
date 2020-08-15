@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
-import './Player.css';
+import classes from './Player.module.css';
 
 const LISTEN_INTERVAL_IN_MS = 10;
 
@@ -10,7 +10,7 @@ interface PlayerInterface {
 }
 
 const Player: React.FC<PlayerInterface> = ({ onListen, audioPath }): JSX.Element => (
-  <div className='Player'>
+  <div className={ classes.Player }>
     <ReactAudioPlayer
       listenInterval={ LISTEN_INTERVAL_IN_MS }
       onListen={ onListen }

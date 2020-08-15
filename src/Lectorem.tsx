@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Player from './Player/Player';
-import './Lectorem.css';
+import classes from './Lectorem.module.css';
 import Modal from './Modal/Modal';
 import Texts from './Texts/Texts';
 import { StoryDataInterface, ConfigurationInterface, LectInterface } from './interfaces/index';
@@ -34,13 +34,13 @@ const Lectorem: React.FC<ComponentPropsInterface> = ({ data, configuration }) =>
   } = data;
 
   return (
-    <div className='Lectorem'>
+    <div className={ classes.Lectorem }>
       { !!title && <h2>{title} </h2> }
       { !!subtitle && <h3>{subtitle} </h3> }
-      <div className='playerContainer'>
+      <div className={ classes.playerContainer }>
         <Player audioPath={ audioPath } onListen={ setReadTime } />
       </div>
-      <div className='lectsContainer'>
+      <div className={ classes.lectsContainer }>
         <Texts
           configuration={ configuration }
           paragraphs={ paragraphs }

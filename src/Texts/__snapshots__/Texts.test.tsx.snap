@@ -8,7 +8,9 @@ exports[`Texts the main component render with data, !isBySentence should render 
     <div
       className="header"
     >
-      <div>
+      <div
+        className="image"
+      >
         <img
           alt="header 0"
           src="./frere.png"
@@ -457,7 +459,9 @@ exports[`Texts the main component render with data, isBySentence should render a
     <div
       className="header"
     >
-      <div>
+      <div
+        className="image"
+      >
         <img
           alt="header 0"
           src="./frere.png"

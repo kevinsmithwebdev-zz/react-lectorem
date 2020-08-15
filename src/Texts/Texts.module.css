@@ -16,3 +16,8 @@
 .Texts .beside {
   flex-direction: row;
 }
+
+.Texts .image {
+  display: flex;
+  justify-content: center;
+}

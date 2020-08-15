@@ -13,6 +13,7 @@ Things we would like to see improved:
 - Double-Clicking on a lect will cause the player to play from there.
 - Allow css info to be passed in as optional props. Basically, allowing the consuming app to pass in their own parameters.
 - Allow different sizes of texts, improve spacing.
+- If no sentenceTranslation is provided, allow (perhaps with a flag) joining the individual lect translations.
 
 ## Steps to contribute.
 

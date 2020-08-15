@@ -1,6 +1,6 @@
 import React from 'react';
 import TextBlock from './TextBlock/TextBlock';
-import './Texts.css';
+import classes from './Texts.module.css';
 import TranslationBlock from './TranslationBlock/TranslationBlock';
 import { ParagraphInterface, ConfigurationInterface } from '../interfaces/index';
 
@@ -28,9 +28,9 @@ export const spreadParagraphsIntoSentenceBlocks = (paragraphs: ParagraphInterfac
 
 export const getClassName = (isTranslationBelow: boolean, idx: number) =>
   [
-    'block',
-    isTranslationBelow ? 'below' : 'beside',
-    idx % 2 ? '' : 'even',
+    classes.block,
+    isTranslationBelow ? classes.below : classes.beside,
+    idx % 2 ? '' : classes.even,
   ].join(' ');
 
 const Texts: React.FC<TextsInterface> = ({
@@ -45,16 +45,16 @@ const Texts: React.FC<TextsInterface> = ({
     : paragraphs;
 
   return (
-    <div className='Texts'>
+    <div className={ classes.Texts }>
       {
         blocks.map((block, idx) => {
           const blockClassName = getClassName(configuration.isTranslationBelow, idx);
           return (
             <div key={ idx.toString() }>
-              <div className='header'>
+              <div className={ classes.header }>
                 {
                   !!block.header?.imagePath && (
-                    <div>
+                    <div className={ classes.image }>
                       <img src={ block.header?.imagePath } alt={ `header ${idx}` } width='150px' />
                     </div>
                   )

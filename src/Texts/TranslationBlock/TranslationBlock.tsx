@@ -1,5 +1,5 @@
 import React from 'react';
-import './TranslationBlock.css';
+import classes from './TranslationBlock.module.css';
 import { SentenceInterface, ConfigurationInterface } from '../../interfaces/index';
 
 interface TranslationBlockInterface {
@@ -11,7 +11,7 @@ interface TranslationBlockInterface {
 
 export const aggregateTranslations = (sentences: SentenceInterface[]): string => sentences.map(s => s.sentenceTranslation).join('  ');
 
-export const getClassName = (isTranslationBelow: boolean): string => ['TranslationBlock', isTranslationBelow ? 'below' : 'beside'].join(' ');
+export const getClassName = (isTranslationBelow: boolean): string => [classes.TranslationBlock, isTranslationBelow ? classes.below : classes.beside].join(' ');
 
 const TranslationBlock: React.FC<TranslationBlockInterface> = (
   { block: { sentences }, configuration: { isTranslationShown, isTranslationBelow } }

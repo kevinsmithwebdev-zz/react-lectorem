@@ -1,5 +1,5 @@
 import React from 'react';
-import './Lect.css';
+import classes from './Lect.module.css';
 import { getFrontSpacer } from '../../utils/punctuation';
 import { LectInterface } from '../../interfaces/index';
 
@@ -17,9 +17,9 @@ export const getHasModalInformation = (lect: LectInterface): boolean => !!lect.e
 
 export const getClassName = (shouldHighlight: boolean, hasModalInformation: boolean): string =>
   [
-    'Lect',
-    shouldHighlight ? 'highlighted' : 'unHighlighted',
-    hasModalInformation ? 'clickable' : '',
+    classes.Lect,
+    shouldHighlight ? classes.highlighted : classes.unHighlighted,
+    hasModalInformation ? classes.clickable : '',
   ].join(' ');
 
 const Lect: React.FC<LectComponentInterface> = ({

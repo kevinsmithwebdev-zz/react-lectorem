@@ -1,5 +1,5 @@
 import React from 'react';
-import './Modal.css';
+import classes from './Modal.module.css';
 import { LectInterface } from '../interfaces/index';
 
 interface ModalData extends LectInterface {
@@ -28,10 +28,10 @@ const Modal: React.FC<ModalInterface> = ({ data, hideModal }) => {
   const handleClick = /* istanbul ignore next */  (_e: React.MouseEvent) => hideModal();
 
   return (
-    <div className='Modal'>
-      <div className='header'>
+    <div className={ classes.Modal }>
+      <div className={ classes.header }>
         <h3>Helpful Hint</h3>
-        <button className='toggle-button' onClick={ handleClick } type='button'>
+        <button className={ classes['toggle-button'] } onClick={ handleClick } type='button'>
           <span role='img' aria-label='close'>
             &#x274c;
           </span>
