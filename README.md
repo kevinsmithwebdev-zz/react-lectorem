@@ -22,7 +22,7 @@ yarn add react-lectorem
 
 ## See It in Use
 
-There is a live site [here](https://kevinsmithwebdev.github.io/index.html) where you can see a demo.
+There is a live site [here](https://kevinsmithwebdev.github.io/apps/lectorem-demo/index.html) where you can see a demo.
 
 ## Sample Code
 
