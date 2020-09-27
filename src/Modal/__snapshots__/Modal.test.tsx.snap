@@ -28,12 +28,13 @@ exports[`Modal the main component render with data should render without crashin
       Helpful Hint
     </h3>
     <button
+      aria-label="button"
       className="toggle-button"
+      data-testid="modal-close-button"
       onClick={[Function]}
       type="button"
     >
       <span
-        aria-label="close"
         role="img"
       >
         ❌

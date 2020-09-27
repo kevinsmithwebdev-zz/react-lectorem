@@ -31,8 +31,8 @@ const Modal: React.FC<ModalInterface> = ({ data, hideModal }) => {
     <div className={ classes.Modal }>
       <div className={ classes.header }>
         <h3>Helpful Hint</h3>
-        <button className={ classes['toggle-button'] } onClick={ handleClick } type='button'>
-          <span role='img' aria-label='close'>
+        <button data-testid='modal-close-button' className={ classes['toggle-button'] } onClick={ handleClick } type='button' aria-label='button'>
+          <span role='img'>
             &#x274c;
           </span>
         </button>

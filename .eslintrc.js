@@ -9,6 +9,8 @@ module.exports = {
     'plugin:css-modules/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:testing-library/recommended',
+    'plugin:jest-dom/recommended',
   ],
   parser: 'babel-eslint',
   parserOptions: {

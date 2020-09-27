@@ -1,5 +1,8 @@
 import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
+import { render, screen } from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
+// import '@testing-library/jest-dom/extend-expect';
 import Modal, { renderLine, ModalInterface } from './Modal';
 
 const mockLectData = {
@@ -61,6 +64,26 @@ describe('Modal', () => {
       it('should render and not crash', () => {
         expect(renderLine(label, thisData)).toMatchSnapshot();
       });
+    });
+  });
+
+  describe('cancel button', () => {
+    const props = { hideModal: jest.fn(), data: 'some data' } as unknown as ModalInterface;
+    render(<Modal { ...props }/>);
+    let retrievedButtons;
+
+    beforeAll(() => {
+      render(<Modal { ...props }/>);
+      retrievedButtons = screen.getAllByTestId('modal-close-button');
+      userEvent.click(retrievedButtons[0]);
+    });
+
+    it('should only be one button', () => {
+      expect(retrievedButtons.length).toBe(1);
+    });
+
+    it('should call function when clicked', () => {
+      expect(props.hideModal).toBeCalled();
     });
   });
 });
