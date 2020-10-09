@@ -12,14 +12,17 @@ export interface ModalInterface {
   hideModal: Function,
 }
 
-export const renderLine = (label: string, thisData: string | undefined): JSX.Element => {
+export const renderLine = (label: string, thisData: string | undefined): JSX.Element  => {
+  if (!thisData) {
+    // @ts-ignore
+    return null;
+  }
+
   return (
-    thisData && (
-      <div className='line' data-testid={ convertToTrainCase(label) }>
-        <span className='label'>{`${label}: `}</span>
-        <span className='data'>{thisData}</span>
-      </div>
-    )
+    <div className='line' data-testid={ convertToTrainCase(label) }>
+      <span className='label'>{`${label}: `}</span>
+      <span className='data'>{thisData}</span>
+    </div>
   );
 };
 

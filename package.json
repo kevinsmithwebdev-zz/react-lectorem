@@ -100,6 +100,7 @@
     "lint:css": "./node_modules/.bin/stylelint src/**/*",
     "lint:js": "./node_modules/.bin/eslint --cache --no-error-on-unmatched-pattern --max-warnings 0 src/**/*.js src/**/*.jsx",
     "start:demo": "cd demo && react-scripts start",
+    "start:demo:ci": "cd demo && npm i && react-scripts start",
     "test": "jest --testPathIgnorePatterns=.spec.",
     "validate": "npm run test && npm run lint",
     "validate:e2e": "server-test start:demo http://localhost:3000 e2e:ci"

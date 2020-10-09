@@ -1,8 +1,6 @@
-name: Node Continuous Integration
+name: Unit Tests
 
-on:
-  pull_request:
-    branches: [master]
+on: [push, pull_request]
 
 jobs:
   test_pull_request:

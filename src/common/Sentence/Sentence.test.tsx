@@ -13,6 +13,7 @@ describe('Sentence', () => {
       readTime: 12.34,
       showModal: () => {},
       configuration: {
+        isBySentence: false,
         isTranslationShown: false,
         isTranslationBelow: false,
       },
@@ -50,7 +51,7 @@ describe('Sentence', () => {
     };
 
     describe('when readTime does not exist', () => {
-      const readTime = undefined as number;
+      const readTime = undefined as unknown as number;
       it('should return false', () => {
         expect(getShouldHighlight(lect, readTime)).toBe(false);
       });
@@ -59,7 +60,7 @@ describe('Sentence', () => {
     describe('when lect does not exist', () => {
       const readTime = 123;
       it('should return false', () => {
-        expect(getShouldHighlight(undefined as LectInterface, readTime)).toBe(false);
+        expect(getShouldHighlight(undefined as unknown as LectInterface, readTime)).toBe(false);
       });
     });
 
@@ -123,7 +124,7 @@ describe('Sentence', () => {
   describe('renderLect', () => {
     describe('if should be highlighted', () => {
       const mockLect = mockSentence.lects[0];
-      const readTime = mockLect.start + TIME_CODE_FUDGE / 2;
+      const readTime = mockLect.start as number + TIME_CODE_FUDGE / 2;
       const functionProps = {
         idx: 12,
         isLast: false,
@@ -140,7 +141,7 @@ describe('Sentence', () => {
 
     describe('if should not be highlighted', () => {
       const mockLect = mockSentence.lects[0];
-      const readTime = mockLect.end + TIME_CODE_FUDGE * 2;
+      const readTime = mockLect.end as number + TIME_CODE_FUDGE * 2;
       const functionProps = {
         idx: 12,
         isLast: false,
