@@ -28,7 +28,7 @@ export interface StoryDataInterface {
 }
 
 export interface ConfigurationInterface {
-  isTranslationShown?: boolean,
-  isTranslationBelow?: boolean,
-  isBySentence?: boolean,
+  isTranslationShown: boolean | undefined,
+  isTranslationBelow: boolean | undefined,
+  isBySentence: boolean | undefined,
 }

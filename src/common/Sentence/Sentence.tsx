@@ -8,24 +8,28 @@ export const TIME_CODE_FUDGE = 0.1;
 
 interface RenderLectInterface {
   idx: number,
-  readTime: number,
+  readTime: number | null,
   lect: LectInterface,
   showModal: Function,
   isLast: boolean,
-  sentenceTranslation: string,
+  sentenceTranslation: string | undefined,
   originalSentence: string,
 }
 
 interface SentenceComponentInterface {
   sentence: SentenceInterface,
-  readTime: number,
+  readTime: number | null,
   showModal: Function,
   configuration: ConfigurationInterface,
 }
 
-export const getShouldHighlight = (lect: LectInterface, readTime: number): boolean =>
-  lect.start - TIME_CODE_FUDGE <= readTime &&
-  readTime <= lect.end + TIME_CODE_FUDGE;
+export const getShouldHighlight = (lect: LectInterface, readTime: number | null): boolean => {
+  if (!readTime) return false; // FIXME: fix
+  if (!lect) return false;
+  if (!lect.start) return false;
+  if (!lect.end) return false;
+  return lect.start - TIME_CODE_FUDGE <= readTime && readTime <= lect.end + TIME_CODE_FUDGE;
+}
 
 export const aggregateSentence = (sentence: SentenceInterface): string =>
   sentence.lects.reduce((acc, { text: cur }, i) => `${acc}${getFrontSpacer(cur[0])}${cur}`, '');
@@ -37,6 +41,7 @@ export const renderLect = ({
   const key = idx;
   return (
     <Lect
+      data-cy='lect'
       lect={ lect }
       isFirst={ idx === 0 }
       isLast={ isLast }

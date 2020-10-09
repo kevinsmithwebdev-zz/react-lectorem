@@ -20,7 +20,7 @@ const TranslationBlock: React.FC<TranslationBlockInterface> = (
     return null;
   }
 
-  const className = getClassName(isTranslationBelow);
+  const className = getClassName(!!isTranslationBelow);
   return (
     <div className={ className }>
       { aggregateTranslations(sentences) }

@@ -2,6 +2,7 @@
 
 exports[`Sentence renderLect if should be highlighted should render and match snapshot 1`] = `
 <Lect
+  data-cy="lect"
   isFirst={false}
   isLast={false}
   lect={
@@ -22,6 +23,7 @@ exports[`Sentence renderLect if should be highlighted should render and match sn
 
 exports[`Sentence renderLect if should not be highlighted should render and match snapshot 1`] = `
 <Lect
+  data-cy="lect"
   isFirst={false}
   isLast={false}
   lect={
@@ -48,6 +50,7 @@ exports[`Sentence the main component render with data should render and match sn
     className="SentenceLectsWrapper"
   >
     <Lect
+      data-cy="lect"
       isFirst={true}
       isLast={false}
       lect={
@@ -65,6 +68,7 @@ exports[`Sentence the main component render with data should render and match sn
       showModal={[Function]}
     />
     <Lect
+      data-cy="lect"
       isFirst={false}
       isLast={false}
       lect={
@@ -82,6 +86,7 @@ exports[`Sentence the main component render with data should render and match sn
       showModal={[Function]}
     />
     <Lect
+      data-cy="lect"
       isFirst={false}
       isLast={true}
       lect={
@@ -106,6 +111,7 @@ exports[`Sentence the main component render with data, isTranslationBelow should
     className="SentenceLectsWrapper"
   >
     <Lect
+      data-cy="lect"
       isFirst={true}
       isLast={false}
       lect={
@@ -123,6 +129,7 @@ exports[`Sentence the main component render with data, isTranslationBelow should
       showModal={[Function]}
     />
     <Lect
+      data-cy="lect"
       isFirst={false}
       isLast={false}
       lect={
@@ -140,6 +147,7 @@ exports[`Sentence the main component render with data, isTranslationBelow should
       showModal={[Function]}
     />
     <Lect
+      data-cy="lect"
       isFirst={false}
       isLast={true}
       lect={
@@ -164,6 +172,7 @@ exports[`Sentence the main component render with data, isTranslationShown should
     className="SentenceLectsWrapper"
   >
     <Lect
+      data-cy="lect"
       isFirst={true}
       isLast={false}
       lect={
@@ -181,6 +190,7 @@ exports[`Sentence the main component render with data, isTranslationShown should
       showModal={[Function]}
     />
     <Lect
+      data-cy="lect"
       isFirst={false}
       isLast={false}
       lect={
@@ -198,6 +208,7 @@ exports[`Sentence the main component render with data, isTranslationShown should
       showModal={[Function]}
     />
     <Lect
+      data-cy="lect"
       isFirst={false}
       isLast={true}
       lect={

@@ -20,7 +20,7 @@ export const createHideModal =
 
 const Lectorem: React.FC<ComponentPropsInterface> = ({ data, configuration }) => {
   const [modalData, setModalData] = useState(null);
-  const [readTime, setReadTime] = useState(null);
+  const [readTime, setReadTime] = useState<number | null>(null);
 
   if (!data) {
     return <p>Loading...</p>;

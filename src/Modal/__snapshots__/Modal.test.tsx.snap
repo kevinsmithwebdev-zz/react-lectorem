@@ -3,6 +3,7 @@
 exports[`Modal renderLine with data should render and not crash 1`] = `
 <div
   className="line"
+  data-testid="label123"
 >
   <span
     className="label"
@@ -20,6 +21,7 @@ exports[`Modal renderLine with data should render and not crash 1`] = `
 exports[`Modal the main component render with data should render without crashing 1`] = `
 <div
   className="Modal"
+  data-testid="hint_modal"
 >
   <div
     className="header"
@@ -43,6 +45,7 @@ exports[`Modal the main component render with data should render without crashin
   </div>
   <div
     className="line"
+    data-testid="text"
   >
     <span
       className="label"
@@ -57,6 +60,7 @@ exports[`Modal the main component render with data should render without crashin
   </div>
   <div
     className="line"
+    data-testid="translation"
   >
     <span
       className="label"
@@ -71,6 +75,7 @@ exports[`Modal the main component render with data should render without crashin
   </div>
   <div
     className="line"
+    data-testid="full-text"
   >
     <span
       className="label"
@@ -85,6 +90,7 @@ exports[`Modal the main component render with data should render without crashin
   </div>
   <div
     className="line"
+    data-testid="full-translation"
   >
     <span
       className="label"
@@ -99,6 +105,7 @@ exports[`Modal the main component render with data should render without crashin
   </div>
   <div
     className="line"
+    data-testid="explanation"
   >
     <span
       className="label"

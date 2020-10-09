@@ -1,0 +1,41 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.App .demoBox {
+  background-color: rgb(198, 245, 198);
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.App .demoBox .controlText {
+  margin: 5px;
+  text-align: center;
+}
+
+.App .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App .controls .control {
+  padding: 5px 20px;
+  width: 200px;
+  margin: 0 5px;
+  color: white;
+  background-color: rgb(34, 105, 238);
+  border-color: rgb(89, 143, 241);
+  border-radius: 3px;
+}
+
+.App .controls .disabled {
+  color: lightgray;
+  background-color: gray;
+  border-color: gray;
+}

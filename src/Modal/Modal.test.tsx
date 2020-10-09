@@ -2,7 +2,6 @@ import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-// import '@testing-library/jest-dom/extend-expect';
 import Modal, { renderLine, ModalInterface } from './Modal';
 
 const mockLectData = {
@@ -42,19 +41,11 @@ describe('Modal', () => {
   });
 
   describe('renderLine', () => {
-    describe('without label', () => {
-      const label = undefined as string;
-      const thisData = 'data123';
-      it('should render and not crash', () => {
-        expect(renderLine(label, thisData)).toBe(false);
-      });
-    });
-
     describe('without thisData', () => {
       const label = 'label123';
-      const thisData = undefined as string;
+      const thisData = undefined as unknown as string;
       it('should render and not crash', () => {
-        expect(renderLine(label, thisData)).toBe(false);
+        expect(renderLine(label, thisData)).toBeUndefined();
       });
     });
 

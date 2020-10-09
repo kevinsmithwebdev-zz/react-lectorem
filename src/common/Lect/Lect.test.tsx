@@ -47,8 +47,8 @@ describe('Lect', () => {
       it('should render and match snapshot', () => {
         const newMockLect = {
           ...mockLect,
-          explanation: undefined as string,
-          translation: undefined as string,
+          explanation: undefined as unknown as string,
+          translation: undefined as unknown as string,
         }
         renderer.render(<Lect {...baseProps} lect={ newMockLect } />);
         expect(renderer.getRenderOutput()).toMatchSnapshot();

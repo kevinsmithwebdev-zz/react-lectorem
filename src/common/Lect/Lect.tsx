@@ -9,7 +9,7 @@ interface LectComponentInterface {
   showModal: Function,
   isLast: boolean,
   isFirst: boolean,
-  sentenceTranslation: string,
+  sentenceTranslation: string | undefined,
   originalSentence: string,
 }
 
@@ -32,9 +32,8 @@ const Lect: React.FC<LectComponentInterface> = ({
   const handleClick = hasModalInformation
     ? /* istanbul ignore next */ () => showModal({ ...lect, sentenceTranslation, originalSentence })
     : /* istanbul ignore next */ () => {};
-
   return (
-    <span className={ className } onClick={ handleClick } aria-hidden='true'>
+    <span className={ className } id='howard' onClick={ handleClick } aria-hidden='true'>
       {`${frontSpacer}${lect.text}${isLast ? '  ' : ''}`}
     </span>
   );

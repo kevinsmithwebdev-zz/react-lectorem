@@ -1,6 +1,6 @@
 {
   "version": "0.1",
   "language": "en",
-  "words": ["lectorem", "lect", "lects", "linebreak", "parens", "stylelint"],
+  "words": ["lectorem", "lect", "lects", "linebreak", "parens", "stylelint", "testid"],
   "flagWords": []
 }

@@ -11,7 +11,7 @@ describe('Lectorem', () => {
     describe('with data', () => {
       describe('with no data', () => {
         const props = {
-          data: undefined as StoryDataInterface,
+          data: undefined as unknown as StoryDataInterface,
         };
         it('should render without crashing', () => {
           renderer.render(<Lectorem {...props} />);
@@ -34,8 +34,8 @@ describe('Lectorem', () => {
         const props = {
           data: {
             ...storyData,
-            title: undefined as string,
-            subtitle: undefined as string,
+            title: undefined as unknown as string,
+            subtitle: undefined as unknown as string,
           },
           configuration: { isTranslationShown: false, isTranslationBelow: false, isBySentence: false },
         };

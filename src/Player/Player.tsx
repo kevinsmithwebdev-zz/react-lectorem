@@ -6,7 +6,7 @@ const LISTEN_INTERVAL_IN_MS = 10;
 
 interface PlayerInterface {
   audioPath: string,
-  onListen: Function,
+  onListen: any, // FIXME:
 }
 
 const Player: React.FC<PlayerInterface> = ({ onListen, audioPath }): JSX.Element => (

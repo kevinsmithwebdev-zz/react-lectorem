@@ -6,9 +6,9 @@ import { ParagraphInterface, ConfigurationInterface } from '../interfaces/index'
 
 export interface TextsInterface {
   paragraphs: ParagraphInterface[],
-  readTime: number,
+  readTime: number | null,
   showModal: Function,
-  configuration: ConfigurationInterface,
+  configuration: ConfigurationInterface | undefined,
 }
 
 export const spreadParagraphsIntoSentenceBlocks = (paragraphs: ParagraphInterface[]) => {
@@ -34,7 +34,7 @@ export const getClassName = (isTranslationBelow: boolean, idx: number) =>
   ].join(' ');
 
 const Texts: React.FC<TextsInterface> = ({
-  paragraphs, readTime, showModal, configuration,
+  paragraphs, readTime, showModal, configuration = { isBySentence: false, isTranslationBelow: false, isTranslationShown: false },
 }) => {
   if (!paragraphs) {
     return null;
@@ -48,7 +48,7 @@ const Texts: React.FC<TextsInterface> = ({
     <div className={ classes.Texts }>
       {
         blocks.map((block, idx) => {
-          const blockClassName = getClassName(configuration.isTranslationBelow, idx);
+          const blockClassName = getClassName(!!configuration.isTranslationBelow, idx);
           return (
             <div key={ idx.toString() }>
               <div className={ classes.header }>

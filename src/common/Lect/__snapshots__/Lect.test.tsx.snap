@@ -4,6 +4,7 @@ exports[`Lect the main component render with data, but no modal information shou
 <span
   aria-hidden="true"
   className="Lect unHighlighted "
+  id="howard"
   onClick={[Function]}
 >
    Frère
@@ -14,6 +15,7 @@ exports[`Lect the main component render with data, isFirst should render and mat
 <span
   aria-hidden="true"
   className="Lect unHighlighted clickable"
+  id="howard"
   onClick={[Function]}
 >
   Frère
@@ -24,6 +26,7 @@ exports[`Lect the main component render with data, isLast should render and matc
 <span
   aria-hidden="true"
   className="Lect unHighlighted clickable"
+  id="howard"
   onClick={[Function]}
 >
    Frère  
@@ -34,6 +37,7 @@ exports[`Lect the main component render with data, shouldHighlight should render
 <span
   aria-hidden="true"
   className="Lect highlighted clickable"
+  id="howard"
   onClick={[Function]}
 >
    Frère

@@ -11,6 +11,7 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:testing-library/recommended',
     'plugin:jest-dom/recommended',
+    'plugin:cypress/recommended',
   ],
   parser: 'babel-eslint',
   parserOptions: {

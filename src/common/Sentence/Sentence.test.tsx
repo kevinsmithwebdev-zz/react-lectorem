@@ -2,6 +2,7 @@ import React from 'react';
 import ShallowRenderer from 'react-test-renderer/shallow';
 import Sentence, { getShouldHighlight, aggregateSentence, renderLect, TIME_CODE_FUDGE } from './Sentence';
 import storyData from '../../fixtureData/story.data';
+import { LectInterface } from '../../interfaces/index';
 
 const mockSentence = storyData.paragraphs[0].sentences[0];
 
@@ -47,6 +48,34 @@ describe('Sentence', () => {
       start: 1000,
       end: 2000,
     };
+
+    describe('when readTime does not exist', () => {
+      const readTime = undefined as number;
+      it('should return false', () => {
+        expect(getShouldHighlight(lect, readTime)).toBe(false);
+      });
+    });
+
+    describe('when lect does not exist', () => {
+      const readTime = 123;
+      it('should return false', () => {
+        expect(getShouldHighlight(undefined as LectInterface, readTime)).toBe(false);
+      });
+    });
+
+    describe('when start does not exist', () => {
+      const readTime = 123;
+      it('should return false', () => {
+        expect(getShouldHighlight({ ...lect, start: undefined } as LectInterface, readTime)).toBe(false);
+      });
+    });
+
+    describe('when end does not exist', () => {
+      const readTime = 123;
+      it('should return false', () => {
+        expect(getShouldHighlight({ ...lect, end: undefined } as LectInterface, readTime)).toBe(false);
+      });
+    });
 
     describe('when readTime is well before start', () => {
       const readTime = lect.start - TIME_CODE_FUDGE * 2;

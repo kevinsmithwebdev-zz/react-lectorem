@@ -9,7 +9,7 @@ interface TextBlockInterface {
   }
   configuration: ConfigurationInterface,
   idx: number,
-  readTime: number,
+  readTime: number | null,
   showModal: Function,
 }
 
