@@ -103,7 +103,5 @@
     "test": "jest --testPathIgnorePatterns=.spec.",
     "validate": "npm run test && npm run lint",
     "validate:e2e": "server-test start:demo http://localhost:3000 e2e:ci"
-
-
   }
 }
