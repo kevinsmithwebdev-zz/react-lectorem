@@ -45,7 +45,7 @@ describe('Modal', () => {
       const label = 'label123';
       const thisData = undefined as unknown as string;
       it('should render and not crash', () => {
-        expect(renderLine(label, thisData)).toBeUndefined();
+        expect(renderLine(label, thisData)).toBeNull();
       });
     });
 
