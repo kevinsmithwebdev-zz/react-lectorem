@@ -67,7 +67,7 @@
     "prop-types": "^15.6.0",
     "react-test-renderer": "^16.13.1",
     "start-server-and-test": "^1.11.5",
-    "stylelint": "^13.6.1",
+    "stylelint": "^15.10.1",
     "stylelint-config-standard": "^20.0.0",
     "ts-loader": "^8.0.2",
     "webpack": "^4.5.0",
